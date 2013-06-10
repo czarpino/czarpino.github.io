@@ -4,12 +4,38 @@
     padding: 0;
 }
 
+/* Layout */
+body {
+    margin: 3% 23%;
+}
+
+body > header, footer {
+    margin: 3% 0%;
+}
+
+body > header > h1, nav  {
+    margin: 0% auto;
+    display: table; /* Fit container to content */
+}
+/* end Layout */
+
+
+
+/* Typography */
 body {
     font-family: "Times New Roman", Serif;
     font-size: 1.05em;
 }
 
+h1, h2 {
+    font-family: Georgia, Serif;
+}
+
 h1 {
-    font-family: "Georgia", Serif;
     font-size: 3em;
 }
+
+h2 {
+    font-size: 2em;
+}
+/* end Typography */
