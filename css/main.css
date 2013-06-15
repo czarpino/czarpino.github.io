@@ -45,6 +45,22 @@ CSS by Czar Pino
     border-bottom: 1px solid #ebebeb;*/
 }
 
+.introParagraph
+{
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.articleBody
+{
+    padding-left: 19px;
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    border-color: #57ad68;
+    border-image: linear-gradient(white, #57ad68) 0 0 0 3 repeat;
+    margin-left: -21px;
+}
+
 #footer
 {
     border-top: 1px solid #ebebeb;
