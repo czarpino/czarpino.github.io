@@ -1,11 +1,53 @@
 /*
 Color Scheme:
-http://colorschemedesigner.com/#2Q21T00w0w0w0
+http://colorschemedesigner.com/#2M41T00w0w0w0
 
 CSS by Czar Pino
 */
 
-#base
+#header, #mainArticle, .mainAside, #footer
 {
-    margin: 3% 18%;
+    margin: 3% 0%;
 }
+
+#header
+{
+    border-bottom: 1px solid #ebebeb;
+    margin-top: 1%;
+}
+
+#siteNav, .article, #browser, #copyright
+{
+    margin: 1% 18%;
+}
+
+#homeLink
+{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 900;
+}
+
+.articleHeader, .articleFooter
+{
+    margin-bottom: 3%;
+}
+
+.articleTitle
+{
+    font-size: 3em;
+    margin: 3% 0%;
+}
+
+#mainArticle, .mainAside
+{
+    /*border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;*/
+}
+
+#footer
+{
+    border-top: 1px solid #ebebeb;
+    margin-bottom: 1%;
+}
+

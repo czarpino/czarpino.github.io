@@ -5,29 +5,50 @@
         <title>Czar Pino</title>
         <link rel="stylesheet" href="css/main.css"/>
     </head>
-    <body>
-        <section id="base">
-            <header>
-                <h1>BLOG TITLE</h1>
+    <body style="margin: 0%; padding: 0%; border: 0%;">
+        <section>
+            <header id="header">
+                <nav id="siteNav">
+                    <a href="#" id="homeLink">
+                        BLOG TITLE
+                    </a>
+                </nav>
             </header>
-            <article>
-                <header>
-                    <h2>
-                        ARTICLE TITLE
-                    </h2>
-                </header>
-                They arent a standard per se, but they are a widely adopted convention within the geek community. And since they use an agreed-upon set of class names, they are as compatible with HTML5 as they are with HTML4 or XHTML. HTML5 offers one potential addition to the microformats arsenal. Because earlier versions of some microformats presented accessibility problems in the way they encoded dates and times (see an article called hAccessibility that I co-wrote with James Craig), HTML5 offers a new element for unambiguously encoding dates and times for machines while still displaying them in a human-readable way.
-                <footer>
-                    Published <time datetime="2009-11-13">June 2013</time>
-                    Tagged with <a href="#">programming</a>, <a href="#">slice-of-life</a>
-                </footer>
-            </article>
-            <aside>
-                <a href="#">Left</a>
-                <a href="#">Right</a>
+            <section id="mainArticle">
+                <article class="article">
+                    <header class="articleHeader">
+                        <h1 class="articleTitle">
+                            ARTICLE TITLE
+                        </h1>
+                    </header>
+                    <p>
+                    They arent a standard per se, but they are a widely adopted convention within the geek community. And since they use an agreed-upon set of class names, they are as compatible with HTML5 as they are with HTML4 or XHTML. HTML5 offers one potential addition to the microformats arsenal.
+                    </p>
+                    <p>
+                    Because earlier versions of some microformats presented accessibility problems in the way they encoded dates and times (see an article called hAccessibility that I co-wrote with James Craig), HTML5 offers a new element for unambiguously encoding dates and times for machines while still displaying them in a human-readable way.
+                    </p>
+                    <p>
+                    They arent a standard per se, but they are a widely adopted convention within the geek community. And since they use an agreed-upon set of class names, they are as compatible with HTML5 as they are with HTML4 or XHTML. HTML5 offers one potential addition to the microformats arsenal.
+                    </p>
+                    <p>
+                    Because earlier versions of some microformats presented accessibility problems in the way they encoded dates and times (see an article called hAccessibility that I co-wrote with James Craig), HTML5 offers a new element for unambiguously encoding dates and times for machines while still displaying them in a human-readable way.
+                    </p>
+                    <footer class="articleFooter">
+                        Published <time datetime="2009-11-13">June 2013</time>
+                    </footer>
+                </article>
+            </section>
+            <aside class="mainAside">
+                <section id="browser">
+                    <header>More readings</header>
+                    <a href="#">Left</a>
+                    <a href="#">Right</a>
+                </section>
             </aside>
-            <footer>
-                Czar Pino&nbsp;&copy;&nbsp;2013
+            <footer id="footer">
+                <section id="copyright">
+                    Czar Pino&nbsp;&copy;&nbsp;2013
+                </section>
             </footer>
         </section>
     </body>
