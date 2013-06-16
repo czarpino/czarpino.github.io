@@ -20,15 +20,26 @@
                 <article class="mainArticle">
                     <header class="articleHeader">
                         <h1 class="articleTitle">
-                            Why Git Rocks
+                            Refresh Entity on Failed Validation
                         </h1>
                     </header>
                     <section class="articleBody">
                         <p>
-                        They arent a standard per se, but they are a widely adopted convention within the geek community. And since they use an agreed-upon set of class names, they are as compatible with HTML5 as they are with HTML4 or XHTML. HTML5 offers one potential addition to the microformats arsenal.
+                        An often overlooked step when updating an entity is reverting invalid changes. While often unnecessary, doing so is borderline good practice.
                         </p>
                         <p>
-                        Because earlier versions of some microformats presented accessibility problems in the way they encoded dates and times (see an article called hAccessibility that I co-wrote with James Craig), HTML5 offers a new element for unambiguously encoding dates and times for machines while still displaying them in a human-readable way.
+                        Here is a typical edit controller which renders a pre-filled form and validates changes to the entity being edited.
+                        </p>
+                        <pre><code>// $user->getSlug() >> 'foo'
+                        
+$userForm->bind($request->request->get($userForm->getName())); Q
+
+// $user->getSlug() >> 'bar'</code></pre>
+                        <p>
+                        While this behavior conveniently saves additional code for updating the entity's attributes, it is especially undesirable when the updated values are invalid, and <code>$user</code> has to be used later in the controller, or in the template.
+                        </p>
+                        <p>
+                        Since binding behavior is inherent to the form, the most convenient solution would be to revert the attribute values of the entity. To this end, Doctrine's EntityManager has refresh() which removes unpersisted changes to an entity.
                         </p>
                     </section>
                     <footer class="articleFooter">
