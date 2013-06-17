@@ -95,17 +95,16 @@ pre, code
         border: 1px solid #dddddd;
         
         /* Inspired by solarized */
-        color: #586e75;    /* Solarize base 01 */
-        background-color: #fdf6e3;    /* Solarize base3 */
+        color: #839496;
+        background-color: #fdf6e3;
+        
+        font: 0.9em "Lucida Console", monospace;
 }
 
 pre
 {
         padding: 2%;
-        border-radius: 12px;
-        
-        font: 0.9em monospace, sans-serif;
-        
+        border-radius: 6px;
         overflow: auto;
 }
 
@@ -113,14 +112,12 @@ code
 {
         padding: 0.5%;
         border-radius: 3px;
-        
-        font: 0.9em monospace, sans-serif;
 }
 
 pre > code
 {
-        padding: 0%;
-        border: 0px;
+        padding: 0;
+        border: 0;
 }
 /* end Source code styles */
 
