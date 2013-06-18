@@ -36,8 +36,11 @@ $userForm->bind($request->request->get($userForm->getName())); Q
                         <p>
                         While this behavior conveniently saves additional code for updating the entity's attributes, it is especially undesirable when the updated values are invalid, and <code>$user</code> has to be used later in the controller, or in the template.
                         </p>
-                        <p>
+                        <blockquote>
                         Since binding behavior is inherent to the form, the most convenient solution would be to revert the attribute values of the entity. To this end, Doctrine's EntityManager has refresh() which removes unpersisted changes to an entity.
+                        </blockquote>
+                        <p>
+                        While this behavior conveniently saves additional code for updating the entity's attributes, it is especially undesirable when the updated values are invalid, and <code>$user</code> has to be used later in the controller, or in the template.
                         </p>
                     </section>
                     <footer class="articleFooter">
@@ -47,7 +50,6 @@ $userForm->bind($request->request->get($userForm->getName())); Q
             </section>
             <aside class="aside">
                 <section class="mainAside">
-                    <a href="#" class="browserLink">Read older</a>
                 </section>
             </aside>
             <footer id="footer">
