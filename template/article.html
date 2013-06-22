@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/png" href="../favicon.png">
+        <title>Refresh Entity on Failed Validation - czarpino@github-pages</title>
+        <link rel="stylesheet" href="css/article.css">
+    </head>
+    <body>
+        <section>
+            <header id="header">
+                <section id="headerContainer">
+                    <a href="/" id="homeLink">
+                        czarpino@github-pages
+                    </a>
+                </section>
+            </header>
+            <section id="main">
+                <article class="mainArticle">
+                    <header class="articleHeader">
+                        <h1 class="articleTitle">
+                            Refresh Entity on Failed Validation
+                        </h1>
+                    </header>
+                    <section class="articleBody">
+                        <p>
+                        An often overlooked step when updating an entity is reverting invalid changes. While often unnecessary, doing so is borderline good practice.
+                        </p>
+                        <p>
+                        Here is a typical edit controller which renders a pre-filled form and validates changes to the entity being edited.
+                        </p>
+                        <pre><code>// $user->getSlug() >> 'foo'
+$userForm->bind($request->request->get($userForm->getName())); Q
+// $user->getSlug() >> 'bar'</code></pre>
+                        <p>
+                        While this behavior conveniently saves additional code for updating the entity's attributes, it is especially undesirable when the updated values are invalid, and <code>$user</code> has to be used later in the controller, or in the template.
+                        </p>
+                        <blockquote>
+                        Since binding behavior is inherent to the form, the most convenient solution would be to revert the attribute values of the entity. To this end, Doctrine's EntityManager has refresh() which removes unpersisted changes to an entity.
+                        </blockquote>
+                        <p>
+                        While this behavior conveniently saves additional code for updating the entity's attributes, it is especially undesirable when the updated values are invalid, and <code>$user</code> has to be used later in the controller, or in the template.
+                        </p>
+                    </section>
+                    <footer class="articleFooter">
+                        Published <time datetime="2009-11-13">June 2013</time>
+                    </footer>
+                </article>
+            </section>
+            <aside class="aside">
+                <section class="mainAside">
+                </section>
+            </aside>
+            <footer id="footer">
+                <section id="footerContainer">
+                    <a href="../about.html">About</a>
+                    <span id="copyright">
+                        Czar Pino&nbsp;&copy;&nbsp;2013
+                    </span>
+                </section>
+            </footer>
+        </section>
+    </body>
+</html>
