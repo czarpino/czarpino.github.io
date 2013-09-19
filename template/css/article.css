@@ -46,9 +46,9 @@ a:link, a:visited
         border-bottom: 1px solid #ebebeb;
 }
 
-#headerContainer, #footerContainer, .mainArticle, .mainAside
+#headerContainer, .mainArticle, .mainAside
 {
-        margin: 0% 18%;
+        margin: 0% 24%;
 }
 
 #homeLink
@@ -92,20 +92,19 @@ a:link, a:visited
 /* Source code styles */
 pre, code
 {
-        border: 1px solid #dddddd;
-        
-        /* Inspired by solarized */
-        color: #839496;
-        background-color: #fdf6e3;
-        
-        font: 0.9em "Lucida Console", monospace;
+        border: 1px solid #eee;
+        font: 0.9em "Anonymous Pro", "Lucida Console", monospace;
 }
 
 pre
 {
-        padding: 2%;
+        padding: 1.8%;
         border-radius: 6px;
         margin: 3% 0%;
+        
+        /* Inspired by solarized */
+        color: #839496;
+        background-color: #002b36;
         
         overflow: auto;
         line-height: 120%;
@@ -131,13 +130,13 @@ blockquote
         border-left: 3px solid #ebebeb;
         margin: 3% 3%;
         font-style: italic;
+        color: #777;
 }
 /* end Quotes */
 
 .articleBody > p:first-child
 {
         font-size: 1.2em;
-        font-style: italic;
         margin-top: 0%;
 }
 
@@ -154,15 +153,8 @@ blockquote
         color: #777777;
 }
 
-#footer
-{
-        padding: 0.3% 0%;
-        border-top: 1px solid #ebebeb;
-        background-color: #f7f7f7;
-        color: #777777;
-}
-
 #copyright
 {
         float: right;
+        color: #777777;
 }
