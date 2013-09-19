@@ -46,7 +46,7 @@ a:link, a:visited
         border-bottom: 1px solid #ebebeb;
 }
 
-#headerContainer, #footerContainer, .mainAside
+#headerContainer, .mainAside
 {
         margin: 0% 18%;
 }
@@ -70,15 +70,8 @@ a:link, a:visited
         color: #777777;
 }
 
-#footer
-{
-        padding: 0.3% 0%;
-        border-top: 1px solid #ebebeb;
-        background-color: #f7f7f7;
-        color: #777777;
-}
-
 #copyright
 {
         float: right;
+        color: #777777;
 }
