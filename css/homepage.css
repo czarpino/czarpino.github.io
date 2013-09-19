@@ -1,0 +1,77 @@
+/*
+
+Color reference
+---------------
+http://colorschemedesigner.com/#2M41T00w0w0w0
+
+Color palette (hex)
+-------------------
++ fcfcfc (base bg)
++ 1e790f (links)
++ ebebeb (header/footer border)
++ ffffff (main section bg)
++ 323232 (main text)
++ dddddd (source code border)
++ 586e75 (source code fg)
++ fdf6e3 (source code bg)
++ 9e9e9e (article footer text)
++ f7f7f7 (footer bg)
++ 777777 (footer fg)
+
+
+
+CSS by Czar Pino
+*/
+
+/* DEFAULT OVERRIDES */
+body
+{
+        padding: 0%;
+        border: 0%;
+        margin: 0%;
+        background-color: #fcfcfc;
+        font-family: Serif;
+        font-size: 100%;
+}
+
+a:link, a:visited
+{
+        color: #1e790f;
+}
+/* end DEFAULT OVERRIDES */
+
+#header
+{
+        padding: 1% 0%;
+        border-bottom: 1px solid #ebebeb;
+}
+
+#headerContainer, .mainAside
+{
+        margin: 0% 18%;
+}
+
+#homeLink
+{
+        text-decoration: none;
+        font-weight: 900;
+}
+
+#main, .aside
+{
+        background-color: #ffffff;
+        padding: 3% 0%;
+}
+
+.mainAside
+{
+        font-family: 'Noto Serif', serif;
+        text-align: center;
+        color: #777777;
+}
+
+#copyright
+{
+        float: right;
+        color: #777777;
+}
