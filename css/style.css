@@ -158,3 +158,20 @@ blockquote
         float: right;
         color: #777777;
 }
+
+/* Selection/highlight colors */
+
+::selection
+{
+    background: #fdf6e3 ;
+}
+
+pre > code::selection
+{
+    background: #073642;
+}
+
+pre::selection
+{
+    background: #073642;
+}
