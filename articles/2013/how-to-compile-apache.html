@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/png" href="../../favicon.png">
+        <title>How to compile Apache</title>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <section>
+            <header id="header">
+                <section id="headerContainer">
+                    <a href="/" id="homeLink">
+                        czarpino@github-pages
+                    </a>
+                    <span id="copyright">
+                        &copy;&nbsp;2013
+                    </span>
+                </section>
+            </header>
+            <section id="main">
+                <article class="mainArticle">
+                    <header class="articleHeader">
+                        <h1 class="articleTitle">
+                            How to compile Apache
+                        </h1>
+                    </header>
+                    <section class="articleBody">
+                        <p>
+                        ... in OSX.
+                        <p>
+                        <h2>Organize</h2>
+                        <p>
+                        To keep from getting confused with other installations, the build process must be organized in such a way that is self-contained. To do this, create a build directory to house the Apache source files and an installation directory where compiled Apache files will be placed.
+                        </p>
+                        <pre><code>mkdir -p ~/build/httpd    # for sources
+mkdir -p ~/tools/httpd    # for compiled files</code></pre>
+                        <p>
+                         Do not install in <code>/usr</code> or <code>/usr/local</code> as the new installation could conflict/overwrite previous installations.
+                        </p>
+                        <h2>Get the source</h2>
+                        <p>
+                        Next, download the Apache source files. At the time of writing it is available from <a href="http://httpd.apache.org">http://httpd.apache.org</a>. Pick the gzipped (.gz) version.
+                        </p>
+                        <p>Now, assuming the downloaded file went to <code>~/Downloads</code>, extract the files and move them to the build directory.
+                        </p>
+                        <pre><code>cd ~/Downloads
+tar -xzvf httpd-2.4.4.tar.gz
+mv httpd-2.4.4 ~/build/httpd
+cd ~/build/httpd</code></pre>
+                        <h2>Configure</h2>
+                        <p>
+                        From the build directory, the next step is now to configure compilation and installation settings.
+                        </p>
+                        <pre><code>./configure --prefix=$HOME/tools/httpd</code></pre>
+                        <p>
+                        The <code>--prefix</code> option specifies where Apache will be installed.
+                        </p>
+                        <h2>Build</h2>
+                        <p>After configuring, the sources can now be compiled. Run <code>make</code> to compile Apache and generate the files to be installed.</p>
+                        <pre><code>make clean
+make</code></pre>
+                        <p>
+                        This step may take some time...
+                        </p>
+                        <h2>Installation</h2>
+                        <p>Finally, Apache has been configured and built. All that's left is to install.</p>
+                        <pre><code>make install</code></pre>
+                    </section>
+                    <footer class="articleFooter">
+                        Published <time datetime="2013-09-24">September 2013</time>
+                    </footer>
+                </article>
+            </section>
+            <aside class="aside">
+                <section class="mainAside">
+                </section>
+            </aside>
+        </section>
+    </body>
+</html>
