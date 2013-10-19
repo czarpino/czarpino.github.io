@@ -235,6 +235,7 @@ pre::selection
 #personal-statement
 {
         line-height: 150%;
+        letter-spacing: 0.03em;
 }
 
 #personal-statement > blockquote
@@ -265,10 +266,6 @@ pre::selection
 #skill-badges
 {
         list-style: none;
-}
-
-#skill-badges
-{
         padding: 0%;
 }
 
@@ -307,6 +304,21 @@ pre::selection
         background: #777;
 }
 
+#tool-badges
+{
+        list-style: none;
+        padding: 0%;
+}
 
+#tool-badges > li
+{
+        display: inline-block;
+        background: #777;
+        color: #FFF;
+        margin: 0.3%;
+        border: 1px solid #777;
+        padding: 0.7% 1.2%;
+        white-space: nowrap;
+}
 
 /* end RESUME */
