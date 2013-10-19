@@ -202,12 +202,11 @@ pre::selection
 
 /* end TEXT SELECTION */
 
-/* HOMEPAGE */
+/* RESUME */
 
 #personal
 {
-        margin: 0% 24%;
-        padding: 3% 0%;
+        margin: 3% 24%;
         color: #323232;
         font-size: 1em;
         font-family: 'Noto Serif', serif;
@@ -222,7 +221,7 @@ pre::selection
 #personal-details > h1
 {
         margin: 0%;
-        font-size: 2em;
+        font-size: 2.4em;
         font-family: 'Playfair Display', serif;
 }
 
@@ -243,4 +242,71 @@ pre::selection
         margin: 12% 0%;
 }
 
-/* end HOMEPAGE */
+#skills, #tools
+{
+        margin: 3% 24%;
+        color: #323232;
+        font-size: 1em;
+        font-family: 'Noto Sans', sans-serif;
+}
+
+#skills > header, #tools > header
+{
+        font-size: 1.2em;
+        font-family: 'Playfair Display', serif;
+        border-bottom: 1px solid #ebebeb;
+}
+
+#skills > header > h2, #tools > header > h2
+{
+        margin: 0%;
+}
+
+#skill-badges
+{
+        list-style: none;
+}
+
+#skill-badges
+{
+        padding: 0%;
+}
+
+#skill-badges > li
+{
+        display: inline-block;
+        background: #333;
+        color: #FFF;
+        margin: 0.3%;
+        border: 1px solid #333;
+        padding: 0.7% 1.2%;
+        white-space: nowrap;
+}
+
+.skill-tier-1, .skill-tier-2, .skill-tier-3
+{
+        display: inline-block;
+        margin: 0% 1% 1.2% 0%;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+}
+
+.skill-tier-1
+{
+        background: #070;
+}
+
+.skill-tier-2
+{
+        background: #770;
+}
+
+.skill-tier-3
+{
+        background: #777;
+}
+
+
+
+/* end RESUME */
