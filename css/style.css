@@ -204,9 +204,9 @@ pre::selection
 
 /* RESUME */
 
-#personal
+#personal, #skills, #tools, #experience
 {
-        margin: 3% 24%;
+        margin: 3% 24% 7%;
         color: #323232;
         font-size: 1em;
         font-family: 'Noto Serif', serif;
@@ -240,25 +240,17 @@ pre::selection
 
 #personal-statement > blockquote
 {
-        margin: 12% 0%;
+        margin-top: 12%;
 }
 
-#skills, #tools
-{
-        margin: 3% 24%;
-        color: #323232;
-        font-size: 1em;
-        font-family: 'Noto Sans', sans-serif;
-}
-
-#skills > header, #tools > header
+#skills > header, #tools > header, #experience > header
 {
         font-size: 1.2em;
         font-family: 'Playfair Display', serif;
         border-bottom: 1px solid #ebebeb;
 }
 
-#skills > header > h2, #tools > header > h2
+#skills > header > h2, #tools > header > h2, #experience > header > h2
 {
         margin: 0%;
 }
@@ -317,6 +309,8 @@ pre::selection
         color: #FFF;
         margin: 0.3%;
         border: 1px solid #777;
+        border-bottom: 1px solid #333;
+        border-right: 1px solid #333;
         padding: 0.7% 1.2%;
         white-space: nowrap;
 }
