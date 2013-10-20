@@ -257,7 +257,7 @@ pre::selection
         background: #DED;
 }
 
-#skills, #tools, #experiences
+#skills, #tools, #experiences, #education
 {
         list-style: none;
         padding: 0%;
@@ -286,17 +286,17 @@ pre::selection
 
 .skill-tier-1
 {
-        background: #070;
+        background: #7C7;
 }
 
 .skill-tier-2
 {
-        background: #770;
+        background: #CC7;
 }
 
 .skill-tier-3
 {
-        background: #777;
+        background: #CCC;
 }
 
 #tools > li
@@ -312,25 +312,25 @@ pre::selection
         white-space: nowrap;
 }
 
-#experiences > li
+#experiences > li, #education > li
 {
         padding: 0% 0% 1.2%;
         border-bottom: 1px solid #CCC;
         margin: 3% 0%;
 }
 
-#experiences > li > .position:after
+#experiences > li > .position:after, #education > li > .title:after
 {
         content: ", ";
 }
 
-#experiences > li > .employer
+#experiences > li > .employer, #education > li > .institution
 {
         margin-left: 1%;
         font-style: italic;
 }
 
-#experiences > li > .timeframe
+#experiences > li > .timeframe, #education > li > .timeframe
 {
         float: right;
         color: #777;
