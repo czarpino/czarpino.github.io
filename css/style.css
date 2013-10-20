@@ -206,10 +206,21 @@ pre::selection
 
 .resume-section
 {
-        margin: 3% 24% 7%;
+        margin: 3% 24% 4.8%;
         color: #323232;
         font-size: 1em;
         font-family: 'Noto Serif', serif;
+}
+
+.resume-section > header
+{
+        font-size: 1.2em;
+        font-family: 'Playfair Display', serif;
+}
+
+.resume-section > header > h2
+{
+        margin: 0%;
 }
 
 #personal-image
@@ -246,25 +257,14 @@ pre::selection
         background: #DED;
 }
 
-#skills > header, #tools > header, #experience > header
-{
-        font-size: 1.2em;
-        font-family: 'Playfair Display', serif;
-        border-bottom: 1px solid #ebebeb;
-}
-
-#skills > header > h2, #tools > header > h2, #experience > header > h2
-{
-        margin: 0%;
-}
-
-#skill-badges
+#skills, #tools, #experiences
 {
         list-style: none;
         padding: 0%;
+        margin-left: 1%;
 }
 
-#skill-badges > li
+#skills > li
 {
         display: inline-block;
         background: #333;
@@ -299,13 +299,7 @@ pre::selection
         background: #777;
 }
 
-#tool-badges
-{
-        list-style: none;
-        padding: 0%;
-}
-
-#tool-badges > li
+#tools > li
 {
         display: inline-block;
         background: #777;
@@ -316,6 +310,31 @@ pre::selection
         border-right: 1px solid #333;
         padding: 0.7% 1.2%;
         white-space: nowrap;
+}
+
+#experiences > li
+{
+        padding: 0% 0% 1.2%;
+        border-bottom: 1px solid #CCC;
+        margin: 3% 0%;
+}
+
+#experiences > li > .position:after
+{
+        content: ", ";
+}
+
+#experiences > li > .employer
+{
+        margin-left: 1%;
+        font-style: italic;
+}
+
+#experiences > li > .timeframe
+{
+        display: block;
+        color: #777;
+        font-size: 0.7em;
 }
 
 /* end RESUME */
