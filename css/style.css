@@ -204,7 +204,7 @@ pre::selection
 
 /* RESUME */
 
-#personal, #skills, #tools, #experience
+.resume-section
 {
         margin: 3% 24% 7%;
         color: #323232;
@@ -214,8 +214,8 @@ pre::selection
 
 #personal-image
 {
-    float: right;
-    border: 1px solid #DEDEDE;
+        float: right;
+        border: 1px solid #DEDEDE;
 }
 
 #personal-details > h1
@@ -225,21 +225,21 @@ pre::selection
         font-family: 'Playfair Display', serif;
 }
 
-#personal-details > p
+#personal-details > address
 {
         margin: 0%;
-        font-size: 1em;
-        font-family: 'Noto Serif', serif;
+        font-size: 0.95em;
+}
+
+#personal-details > address > .email
+{
+        display: block;
 }
 
 #personal-statement
 {
         line-height: 150%;
         letter-spacing: 0.03em;
-}
-
-#personal-statement > blockquote
-{
         margin-top: 12%;
 }
 
