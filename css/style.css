@@ -229,6 +229,11 @@ pre::selection
         border: 1px solid #DEDEDE;
 }
 
+#personal-details
+{
+        margin-bottom: 12%;
+}
+
 #personal-details > h1
 {
         margin: 0%;
@@ -247,11 +252,31 @@ pre::selection
         display: block;
 }
 
+#online
+{
+        list-style: none;
+        padding: 0%;
+}
+
+#online > li
+{
+        display: inline-block;
+        margin: 0.3%;
+        border-top: 1px solid #CCC;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        border-left: 1px solid #CCC;
+}
+
+#online > li > a > img
+{
+        display:block;
+}
+
 #personal-statement
 {
         line-height: 150%;
         letter-spacing: 0.03em;
-        margin-top: 12%;
         
         padding: 3% 3% 3% 7%;
         background: #DED;
