@@ -332,9 +332,16 @@ pre::selection
 
 #experiences > li > .timeframe
 {
-        display: block;
+        float: right;
         color: #777;
-        font-size: 0.7em;
+        font-size: 0.8em;
+}
+
+#experiences > li > .description
+{
+        margin: 2.1% 0% 0%;
+        font-size: 0.9em;
+        color: #777;
 }
 
 /* end RESUME */
