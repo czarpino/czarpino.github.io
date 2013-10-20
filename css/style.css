@@ -241,6 +241,9 @@ pre::selection
         line-height: 150%;
         letter-spacing: 0.03em;
         margin-top: 12%;
+        
+        padding: 3% 3% 3% 7%;
+        background: #DED;
 }
 
 #skills > header, #tools > header, #experience > header
