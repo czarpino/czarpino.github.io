@@ -1,137 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
-        <link rel="icon" type="image/png" href="../favicon.jpg">
-        <title>Czar Pino</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <section>
-            <header id="header">
-                <section id="headerContainer">
-                    <a href="/" id="homeLink">
-                        CZARPINO
-                    </a>
-                    <span id="copyright"></span>
-                </section>
-            </header>
-            <section id="main">
-                <section class="resume-section">
-                    <img id="personal-image" height="108" width="108" src="https://www.gravatar.com/avatar/6d9721ec719d8cd0d04fa521f03b5cf8?s=108&d=retro">
-                    <section id="personal-details">
-                        <h1>Czar Pino</h1>
-                        <address>
-                            Leyte, Philippines
-                            <a class="email" href="mailto:contact@czarpino.com">contact@czarpino.com</a>
-                        </address>
-                    </section>
-                    <section id="personal-statement">
-                        Czar Pino is a professional web developer and all around programmer. He is an enthusiast of programming competitions and and is an occasional participant of TopCoder marathon matches. He has spent most of his career on advertising, review, and crowdsouring websites, having worked on projects like <a href="http://goabroad.com" rel="nofollow">goabroad.com</a>, <a href="http://ratemystudyabroad.com" rel="nofollow">ratemystudyabroad.com</a> and <a href="http://fundmytravel.com" rel="nofollow">fundmytravel.com</a>. He also likes tinkering his is own builds of <a href="/articles/2013/how-to-compile-php.html">PHP</a> and <a href="/articles/2013/how-to-compile-apache.html">Apache</a>. 
-                    </section>
-                </section>
-                <section class="resume-section">
-                    <header><h2>Skills</h2></header>
-                    <ul id="skills">
-                        <li>
-                            <span class="skill-tier-1"></span> Web Development
-                        </li>
-                        <li>
-                            <span class="skill-tier-2"></span> General Programming
-                        </li>
-                        <li>
-                            <span class="skill-tier-3"></span> Web Design
-                        </li>
-                    </ul>
-                </section>
-                <section class="resume-section">
-                    <header><h2>Tools</h2></header>
-                    <ul id="tools">
-                        <li>PHP</li>
-                        <li>Javascript</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                        <li>Apache</li>
-                        <li>SVN</li>
-                        <li>Git</li>
-                        <li>MySQL</li>
-                        <li>JQuery</li>
-                        <li>Symfony</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                    </ul>
-                </section>
-                <section class="resume-section">
-                    <header><h2>Online</h2></header>
-                    <ul id="online">
-                        <li>
-                            <a href="http://stackoverflow.com/users/1349295" rel="nofollow" target="_blank">
-                                <img title="StackOverflow" alt="StackOverflow" src="http://stackoverflow.com/users/flair/1349295.png">
-                            </a>
-                        </li>
-                        <li>
-                            <a style="display:block" href="http://projecteuler.net/" rel="nofollow" target="_blank">
-                                <img title="ProjectEuler" alt="ProjectEuler" src="http://projecteuler.net/profile/czarpino.png">
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-                <section class="resume-section">
-                    <header><h2>Experience</h2></header>
-                    <ul id="experiences">
-                        <li>
-                            <span class="position">Teacher</span>
-                            <span class="employer">GAP Academy</span>
-                            <span class="timeframe">2013</span>
-                            <p class="description">
-                                Taught super duper basic Ruby programming to kids.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="position">Speaker</span>
-                            <span class="employer">GAPLabs Webcamp 2013</span>
-                            <span class="timeframe">2013</span>
-                            <p class="description">
-                                Conducted a workshop on PHP web development.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="position">Web Developer</span>
-                            <span class="employer">GoAbroad Philippines Inc.</span>
-                            <span class="timeframe">2011-2013</span>
-                            <p class="description">
-                                Developed and maintained a handful of websites including the flagship <a href="http://goabroad.com" rel="nofollow">goabroad.com</a> and a promising offshoot project <a href="http://fundmytravel.com" rel="nofollow">fundmytravel.com</a>.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="position">Intern Programmer</span>
-                            <span class="employer">UPVTC - SAO</span>
-                            <span class="timeframe">Summer 2010</span>
-                        </li>
-                    </ul>
-                </section>
-                <section class="resume-section">
-                    <header><h2>Education</h2></header>
-                    <ul id="education">
-                        <li>
-                            <span class="title">BS Computer Science</span>
-                            <span class="institution">UPVTC</span>
-                            <span class="timeframe">2012</span>
-                        </li>
-                        <li>
-                            <span class="title">Highschool</span>
-                            <span class="institution">PSHS - EVC</span>
-                            <span class="timeframe">2007</span>
-                        </li>
-                    </ul>
-                </section>
+<!doctype html>
+<html lang=en ng-app="MyApp" ng-controller="Profile as profile">
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ profile.data.name }}</title>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="vendor/components-font-awesome/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" href="css/app.css" media="all">
+</head>
+<body class="container-fluid">
+    <div class="splashscreen" ng-show="!profile.data"><p>Preparing awesomeness ...</p></div>
+
+    <div class="main-section row" ng-show="profile.data">
+
+        <aside class="side-content col-md-2 col-md-offset-2 col-sm-3 col-sm-offset-0">
+            <section>
+                <img src="{{ profile.data.image }}" class="img-responsive img-rounded center-block" width="150" height="150">
             </section>
-            <aside class="aside">
-                <section class="mainAside">
+            <h3 class="text-center">{{ profile.data.name }}</h3>
+            <p>{{ profile.data.blurb }}</p>
+            <ul class="list-unstyled list-inline social-list">
+                <li ng-repeat="link in profile.data.links">
+                    <a class="btn btn-xs" href="{{ link.url }}">
+                        <i class="fa {{ link.icon }} fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+            <section ng-repeat="tag in profile.data.tags">
+                <h3>{{ tag.label }}</h3>
+                <ul class="list-unstyled list-inline tools-list">
+                    <li ng-repeat="keyword in tag.keywords">
+                        {{ keyword }}
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <hr>
+                <ul class="list-unstyled">
+                    <li class="sidenote small" ng-repeat="sidenote in profile.data.sidenotes" marked="sidenote"></li>
+                </ul>
+            </section>
+        </aside>
+
+        <section class="main-content col-md-6 col-sm-9">
+            <div class="row">
+                <section class="personal-statement col-xs-12 row">
+                    <blockquote>
+                        <span class"col-xs-11" marked="profile.data.statement"></span>
+                    </blockquote>
                 </section>
-            </aside>
+            </div>
+
+            <div class="row" ng-repeat="section in profile.data.sections">
+                <section class="information-section col-xs-12">
+                    <div><i class="fa {{ section.icon }} fa-3x"></i><span class="h1"> {{ section.title }}</span></div>
+                    <ul class="information-list list-unstyled">
+                        <li ng-repeat="item in section.items">
+                            <header class="information-item-header">
+                                <div class="{{ header.tag }}" ng-repeat="header in item.headers">
+                                    {{ header.text }}
+                                    <a ng-if="header.link" href="{{ header.link }}"><i class="fa fa-link"></i></a>
+                                </div>
+                            </header>
+                            <section ng-if="item.description" class="information-item-text" marked="item.description"></section>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </section>
-    </body>
+    </div>
+
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/marked/lib/marked.js"></script>
+    <script src="vendor/angular-marked/angular-marked.min.js"></script>
+    <script src="js/app.module.js"></script>
+    <script src="js/profile/controller.js"></script>
+
+</body>
 </html>

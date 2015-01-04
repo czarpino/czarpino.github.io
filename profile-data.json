@@ -1,0 +1,325 @@
+{
+    "name": "Czar Pino",
+
+    "blurb": "Programmer. Computer science enthusiast. Lead developer at GAPLabs.",
+
+    "image": "images/profile.jpg",
+
+    "links": [
+
+        {
+            "icon": "fa-stack-overflow",
+            "url": "https://stackoverflow.com/users/1349295/czar-pino"
+        },
+
+        {
+            "icon": "fa-linkedin",
+            "url": "https://ph.linkedin.com/in/czarpino/"
+        },
+
+        {
+            "icon": "fa-github",
+            "url": "https://github.com/czarpino"
+        }
+    ],
+
+    "tags": [
+
+        {
+            "label": "Likes",
+            "keywords": ["Symfony", "Composer", "Bower", "AngularJS", "Git", "Bootstrap"]
+        }
+    ],
+
+    "sidenotes": [
+
+        "Checkout my new blog at [blog.czarpino.com](https://blog.czarpino.com)",
+
+        "Queries, development, consulting? Drop a line: [email@czarpino.com](mailto:email@czarpino.com)"
+    ],
+
+    "statement": "Hi, I'm Czar. I love framing problems and devising programmable solutions. I've been building websites since 2011 and have since refactored legacy codebases, optimized dev processes, and learned from a handful of failed projects along the way. I am passionate in the application of programming in improving people's lives.",
+
+    "sections": [
+
+        {
+            "title": "GitHub",
+
+            "icon": "fa-github",
+
+            "items": [
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "EventLoop Component",
+                            "link": "https://github.com/reactphp/event-loop"
+                        }
+                    ],
+
+                    "description": "Submitted fix for a class autoloading bug.\n> <small>Event loop abstraction layer that libraries can use for evented I/O.</small>"
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Pokerank",
+                            "link": "https://www.github.com/czarpino/pokerank"
+                        }
+                    ],
+
+                    "description": "A fast poker hand scoring program written in PHP.\n> <small>Pokerank is a poker hand scoring algorithm written in PHP. The algorithm assigns a score to a poker hand such that a better hand has a higher score (eg. King-High Straight Flush > King-High Straight).The algorithm is loosely built upon the work of Cactus Kev and uses a lookup table containing the 7462 distinct hand values that a hand may take.</small>"
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Change2",
+                            "link": "https://www.github.com/czarpino/change2"
+                        }
+                    ],
+
+                    "description": "A jquery plugin for detecting a series of related of input events without relying on a blur event.\n> <small>This plugin has been developed to allow binding of actions that have to be executed right after content changes in text inputs or text areas. Named after jQuery's change(), change2() eliminates the need to rely on a blur event for the change event to fire.</small>"
+                }
+            ]
+        },
+
+        {
+            "title": "Talks and Panels",
+
+            "icon": "fa-comments",
+
+            "items": [
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "PHP Web Development"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "GAPLabs Webcamp 2013"
+                        },
+
+                        {
+                            "tag": "h5",
+                            "text": "Speaker"
+                        }
+                    ]
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "GAPLabs Programming Competition"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "GAPLabs Webcamp 2013"
+                        },
+
+                        {
+                            "tag": "h5",
+                            "text": "Panelist"
+                        }
+                    ]
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Web Programming Contest"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "Smite Robotics and Web Programming Festival 2012"
+                        },
+
+                        {
+                            "tag": "h5",
+                            "text": "Panelist"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "title": "Experience",
+
+            "icon": "fa-suitcase",
+
+            "items": [
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Senior Software Engineer"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "Salarium Ltd."
+                        }
+                    ],
+
+                    "description": "I worked at Salarium as a Senior Software Engineer where I led the adoption and implementation of modern technologies and standards. I have:\n- Devised and initiated the transition away from legacy framework and tools\n- Introduced industry best practices, tools, and techniques\n- Introduced and designed unit tests\n- Conceived, defined, and documented feature specifications\n- Engineered components for internal and public use\n- Refactored and rewrote legacy codes to improve maintainability and design"
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Senior E-Commerce Developer"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "EasyShop Online Inc."
+                        }
+                    ],
+
+                    "description": "I worked as a full-stack developer, interim systems engineer, and programming consultant for EasyShop, an online buy and sell platform for the Philippines. Among the many hats I wore, I have in particular:\n- Spearheaded the adoption of modern tools, standards, and practices\n- Introduced coding standards and best practices\n- Introduced well-structured development and deployment processes\n- Performed extensive code reviews\n- Devised strategy for seamless transition to modern framework and tools\n- Setup and managed company servers and development infrastructure\n- Setup automated backups and deploy scripts"
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Web Developer"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "FundMyTravel"
+                        }
+                    ],
+
+                    "description": "The latter half of my stay with GoAbroad was spent in the development of [FundMyTravel](https://www.fundmytravel.com/), a crowd funding platform for travellers. I have:\n- Developed reusable back and front end modules\n- Designed unit tests\n- Spearheaded the adoption of a well-structured development and deployment process\n- Integrated issue tracking to the development process"
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Web Developer"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "GoAbroad Philippines Inc."
+                        }
+                    ],
+
+                    "description": "I worked at GoAbroad Philippines as a web developer where I inherited a handful of legacy projects. Mainly in charge of maintenance, I have:\n- Diagnosed and addressed bugs\n- Put forward the adoption of coding standards\n- Refactored and rewrote codes to improve maintainability and design\n- Developed new features to address arising business needs"
+                }
+            ]
+        },
+
+        {
+            "title": "Education",
+
+            "icon": "fa-graduation-cap",
+
+            "items": [
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Computer Science, B.S."
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "University of the Philippines"
+                        }
+                    ],
+
+                    "description": "I took up Computer Science and was again lucky to get a scholarship from the Department of Science and Technology. Here, I wrote a variety of programs including:\n- Games,\n- Networking applications, \n- Algorithm and data structure simulators,\n- Information systems,\n- and AI programs."
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "High School"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "Philippine Science High School"
+                        }
+                    ],
+
+                    "description": "I was granted full scholarship in Philippine Science High School where I was introduced to  C and Visual Basic programming."
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Elementary School"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "STEFTI"
+                        }
+                    ],
+
+                    "description": "I graduated with honors in the pioneering batch of STEFTI. I was a 1st class boy scout, a band lyrist, and a clubless student."
+                }
+            ]
+        },
+
+        {
+            "title": "Certification",
+
+            "icon": "fa-certificate",
+
+            "items": [
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Civil Service Professional"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "Civil Service Commission of the Philippines"
+                        }
+                    ],
+
+                    "description": "At whim, I took the CSC Philippines career professional exam and luckily passed at 85.5% and even placed 4th in the region!"
+                }
+            ]
+        }
+    ]
+}
