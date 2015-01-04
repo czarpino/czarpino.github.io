@@ -1,82 +1,82 @@
 <!doctype html>
 <html lang=en ng-app="MyApp" ng-controller="Profile as profile">
-<head>
-    <meta charset=utf-8>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ profile.data.name }}</title>
-    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" media="all">
-    <link rel="stylesheet" href="vendor/components-font-awesome/css/font-awesome.min.css" media="all">
-    <link rel="stylesheet" href="css/app.css" media="all">
-</head>
-<body class="container-fluid">
-    <div class="splashscreen" ng-show="!profile.data"><p>Preparing awesomeness ...</p></div>
+    <head>
+        <meta charset=utf-8>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ profile.data.name }}</title>
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" media="all">
+        <link rel="stylesheet" href="vendor/components-font-awesome/css/font-awesome.min.css" media="all">
+        <link rel="stylesheet" href="css/app.css" media="all">
+    </head>
+    <body class="container-fluid" ng-switch="profile.data.length !== 0">
+        <div class="splashscreen animate-switch" ng-switch-when="false"><p>Preparing awesomeness ...</p></div>
 
-    <div class="main-section row" ng-show="profile.data">
+        <div class="main-section row animate-switch" ng-switch-when="true">
 
-        <aside class="side-content col-md-2 col-md-offset-2 col-sm-3 col-sm-offset-0">
-            <section>
-                <img ng-src="{{ profile.data.image}}" class="img-responsive img-rounded center-block" width="150" height="150">
-            </section>
-            <h3 class="text-center">{{ profile.data.name }}</h3>
-            <p>{{ profile.data.blurb }}</p>
-            <ul class="list-unstyled list-inline social-list">
-                <li ng-repeat="link in profile.data.links">
-                    <a class="btn btn-xs" href="{{ link.url }}">
-                        <i class="fa {{ link.icon }} fa-2x"></i>
-                    </a>
-                </li>
-            </ul>
-            <section ng-repeat="tag in profile.data.tags">
-                <h3>{{ tag.label }}</h3>
-                <ul class="list-unstyled list-inline tools-list">
-                    <li ng-repeat="keyword in tag.keywords">
-                        {{ keyword }}
+            <aside class="side-content col-md-2 col-md-offset-2 col-sm-3 col-sm-offset-0">
+                <section>
+                    <img ng-src="{{ profile.data.image}}" class="img-responsive img-rounded center-block" width="150" height="150">
+                </section>
+                <h3 class="text-center">{{ profile.data.name }}</h3>
+                <p>{{ profile.data.blurb }}</p>
+                <ul class="list-unstyled list-inline social-list">
+                    <li ng-repeat="link in profile.data.links">
+                        <a class="btn btn-xs" href="{{ link.url }}">
+                            <i class="fa {{ link.icon }} fa-2x"></i>
+                        </a>
                     </li>
                 </ul>
-            </section>
-
-            <section>
-                <hr>
-                <ul class="list-unstyled">
-                    <li class="sidenote small" ng-repeat="sidenote in profile.data.sidenotes" marked="sidenote"></li>
-                </ul>
-            </section>
-        </aside>
-
-        <section class="main-content col-md-6 col-sm-9">
-            <div class="row">
-                <section class="personal-statement col-xs-12 row">
-                    <blockquote>
-                        <span class"col-xs-11" marked="profile.data.statement"></span>
-                    </blockquote>
-                </section>
-            </div>
-
-            <div class="row" ng-repeat="section in profile.data.sections">
-                <section class="information-section col-xs-12">
-                    <div><i class="fa {{ section.icon }} fa-3x"></i><span class="h1"> {{ section.title }}</span></div>
-                    <ul class="information-list list-unstyled">
-                        <li ng-repeat="item in section.items">
-                            <header class="information-item-header">
-                                <div class="{{ header.tag }}" ng-repeat="header in item.headers">
-                                    {{ header.text }}
-                                    <a ng-if="header.link" href="{{ header.link }}"><i class="fa fa-link"></i></a>
-                                </div>
-                            </header>
-                            <section ng-if="item.description" class="information-item-text" marked="item.description"></section>
+                <section ng-repeat="tag in profile.data.tags">
+                    <h3>{{ tag.label }}</h3>
+                    <ul class="list-unstyled list-inline tools-list">
+                        <li ng-repeat="keyword in tag.keywords">
+                            {{ keyword }}
                         </li>
                     </ul>
                 </section>
-            </div>
-        </section>
-    </div>
 
-    <script src="vendor/angular/angular.min.js"></script>
-    <script src="vendor/marked/lib/marked.js"></script>
-    <script src="vendor/angular-marked/angular-marked.min.js"></script>
-    <script src="js/app.module.js"></script>
-    <script src="js/profile/controller.js"></script>
+                <section>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li class="sidenote small" ng-repeat="sidenote in profile.data.sidenotes" marked="sidenote"></li>
+                    </ul>
+                </section>
+            </aside>
 
-</body>
+            <section class="main-content col-md-6 col-sm-9">
+                <div class="row">
+                    <section class="personal-statement col-xs-12 row">
+                        <blockquote>
+                            <span class"col-xs-11" marked="profile.data.statement"></span>
+                        </blockquote>
+                    </section>
+                </div>
+
+                <div class="row" ng-repeat="section in profile.data.sections">
+                    <section class="information-section col-xs-12">
+                        <div><i class="fa {{ section.icon }} fa-3x"></i><span class="h1"> {{ section.title }}</span></div>
+                        <ul class="information-list list-unstyled">
+                            <li ng-repeat="item in section.items">
+                                <header class="information-item-header">
+                                    <div class="{{ header.tag }}" ng-repeat="header in item.headers">
+                                        {{ header.text }}
+                                        <a ng-if="header.link" href="{{ header.link }}"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </header>
+                                <section ng-if="item.description" class="information-item-text" marked="item.description"></section>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <script src="vendor/angular/angular.min.js"></script>
+        <script src="vendor/marked/lib/marked.js"></script>
+        <script src="vendor/angular-marked/angular-marked.min.js"></script>
+        <script src="js/app.module.js"></script>
+        <script src="js/profile/controller.js"></script>
+
+    </body>
 </html>
