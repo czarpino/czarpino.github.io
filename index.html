@@ -8,8 +8,10 @@
         <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" media="all">
         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" media="all">
         <link rel="stylesheet" href="css/app.css" media="all">
+
+        <script src="js/deps/angular/angular.min.js"></script>
     </head>
-    <body class="container-fluid" ng-switch="profile.data.length !== 0">
+    <body class="container-fluid" ng-switch="profile.data.length !== 0" ng-cloak>
         <div class="splashscreen" ng-switch-when="false"><p>Fetching data ...</p></div>
 
         <div class="main-section row" ng-switch-when="true">
@@ -72,8 +74,6 @@
             </section>
         </div>
 
-
-        <script src="js/deps/angular/angular.min.js"></script>
         <script src="js/deps/marked/lib/marked.js"></script>
         <script src="js/deps/angular-marked/angular-marked.min.js"></script>
         <script src="js/app.module.js"></script>
