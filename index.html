@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/app.css" media="all">
     </head>
     <body class="container-fluid" ng-switch="profile.data.length !== 0">
-        <div class="splashscreen" ng-switch-when="false"><p>Preparing awesomeness ...</p></div>
+        <div class="splashscreen" ng-switch-when="false"><p>Fetching data ...</p></div>
 
         <div class="main-section row" ng-switch-when="true">
 
@@ -72,11 +72,11 @@
             </section>
         </div>
 
+
         <script src="vendor/angular/angular.min.js"></script>
         <script src="vendor/marked/lib/marked.js"></script>
         <script src="vendor/angular-marked/angular-marked.min.js"></script>
         <script src="js/app.module.js"></script>
         <script src="js/profile/controller.js"></script>
-
     </body>
 </html>
