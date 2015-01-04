@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('MyApp')
-           .controller('Profile', Profile);
+           .controller('Profile', ['$http', Profile]);
 
     /**
      * Initialize profile information from JSON.
@@ -13,8 +13,6 @@
         var vm = this;
 
         $http.get('/profile-data.json')
-             .then(function(res){
-                  vm.data = res.data;
-             });
+             .then(function (response) { vm.data = response.data; });
     }
 })();
