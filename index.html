@@ -26,7 +26,7 @@
                 <ul class="list-unstyled list-inline social-list">
                     <li ng-repeat="link in profile.data.links">
                         <a class="btn btn-xs" href="{{ link.url }}">
-                            <i class="fa {{ link.icon }} fa-2x"></i>
+                            <i class="fa {{ link.icon }} fa-2x fa-fw"></i>
                         </a>
                     </li>
                 </ul>
@@ -40,7 +40,7 @@
                 </section>
 
                 <section>
-                    <hr>
+                    <h3>Updates</h3>
                     <ul class="list-unstyled">
                         <li class="sidenote small" ng-repeat="sidenote in profile.data.sidenotes" marked="sidenote"></li>
                     </ul>

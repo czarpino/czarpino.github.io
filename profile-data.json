@@ -1,7 +1,7 @@
 {
     "name": "Czar Pino",
 
-    "blurb": "Programmer. Computer science enthusiast. Lead developer at GAPLabs.",
+    "blurb": "Software engineer. Computer science enthusiast. Lead Dev at GAPLabs. Loves brains.",
 
     "image": "//s.gravatar.com/avatar/9d4eab23ec2e86a223826ffcd1644b53?s=300",
 
@@ -10,6 +10,11 @@
         {
             "icon": "fa-stack-overflow",
             "url": "https://stackoverflow.com/users/1349295/czar-pino"
+        },
+
+        {
+            "icon": "fa-twitter",
+            "url": "https://twitter.com/czarpino"
         },
 
         {
@@ -33,10 +38,12 @@
 
     "sidenotes": [
 
-        "Queries, development, consulting? Drop a line: [email@czarpino.com](mailto:email@czarpino.com)"
+        "Looking for a [teammate](http://t.co/k6LpE32yXD)! We are hiring at GAPLabs!",
+
+        "Drop me a line: [email@czarpino.com](mailto:email@czarpino.com)"
     ],
 
-    "statement": "Hi, I'm Czar. I love framing problems and devising programmable solutions. I've been building websites since 2011 and have since refactored legacy codebases, optimized dev processes, and learned from a handful of failed projects along the way. My passion is in the application of programming in improving people's lives.",
+    "statement": "Hi, I'm Czar. I love framing problems and problem-solving and computer science. I have worked on custom CMS, Crowdfunding, Advertising, E-Commerce, and Payroll softwares. I am keen on building meaningful things and passionate in empowering people to code.",
 
     "sections": [
 
@@ -255,7 +262,7 @@
                         }
                     ],
 
-                    "description": "I took up Computer Science and was again lucky to get a scholarship from the Department of Science and Technology. Here, I wrote a variety of programs including:\n- Games,\n- Networking applications, \n- Algorithm and data structure simulators,\n- Information systems,\n- and AI programs."
+                    "description": "I took up Computer Science in UP Tacloban. Wrote a variety of programs including:\n- Games,\n- Networking applications, \n- Algorithm and data structure simulators,\n- Information systems,\n- and AIs."
                 },
 
                 {
@@ -289,7 +296,7 @@
                         }
                     ],
 
-                    "description": "I graduated with honors in the pioneering batch of STEFTI. I was a 1st class boy scout, a band lyrist, and a clubless student."
+                    "description": "I graduated in the pioneering batch of STEFTI. I was a 1st class boy scout, a band lyrist, and a clubless student."
                 }
             ]
         },
