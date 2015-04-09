@@ -1,9 +1,9 @@
 {
     "name": "Czar Pino",
 
-    "blurb": "Software engineer. Computer science enthusiast. Lead Dev at GAPLabs. Loves brains.",
+    "blurb": "Computer programmer.",
 
-    "image": "//s.gravatar.com/avatar/9d4eab23ec2e86a223826ffcd1644b53?s=300",
+    "image": "//s.gravatar.com/avatar/56cc0e86eeeea49cbcea6dd793f529b1?s=300",
 
     "links": [
 
@@ -18,11 +18,6 @@
         },
 
         {
-            "icon": "fa-linkedin",
-            "url": "https://ph.linkedin.com/in/czarpino/"
-        },
-
-        {
             "icon": "fa-github",
             "url": "https://github.com/czarpino"
         }
@@ -32,75 +27,68 @@
 
         {
             "label": "Likes",
-            "keywords": ["Symfony", "Composer", "Bower", "AngularJS", "Git", "Bootstrap"]
+            "keywords": ["Sf2", "Composer", "Bower", "Angular", "Git", "Bootstrap"]
         }
     ],
 
     "sidenotes": [
-
-        "Looking for a [teammate](http://t.co/k6LpE32yXD)! We are hiring at GAPLabs!",
-
-        "Drop me a line: [email@czarpino.com](mailto:email@czarpino.com)"
+        "You can find [me on twitter](https://twitter.com/czarpino) occassionally raving about programming."
     ],
 
-    "statement": "Hi, I'm Czar. I love framing problems and problem-solving and computer science. I have worked on custom CMS, Crowdfunding, Advertising, E-Commerce, and Payroll softwares. I am keen on building meaningful things and passionate in empowering people to code.",
+    "statement": "Hi, I'm Czar (pronounced 'zar'). I'm a computer programmer and I write mumbo-jumbo-looking broken english phrases that supposedly tells a computer what to do. I specialize in developing web based softwares i.e. websites.",
 
     "sections": [
 
         {
-            "title": "GitHub",
-
-            "icon": "fa-github",
-
-            "items": [
-
-                {
-                    "headers": [
-
-                        {
-                            "tag": "h3",
-                            "text": "EventLoop Component",
-                            "link": "https://github.com/reactphp/event-loop"
-                        }
-                    ],
-
-                    "description": "Submitted fix for a class autoloading bug.\n> <small>Event loop abstraction layer that libraries can use for evented I/O.</small>"
-                },
-
-                {
-                    "headers": [
-
-                        {
-                            "tag": "h3",
-                            "text": "Pokerank",
-                            "link": "https://www.github.com/czarpino/pokerank"
-                        }
-                    ],
-
-                    "description": "A fast poker hand scoring program written in PHP.\n> <small>Pokerank is a poker hand scoring algorithm written in PHP. The algorithm assigns a score to a poker hand such that a better hand has a higher score (eg. King-High Straight Flush > King-High Straight).The algorithm is loosely built upon the work of Cactus Kev and uses a lookup table containing the 7462 distinct hand values that a hand may take.</small>"
-                },
-
-                {
-                    "headers": [
-
-                        {
-                            "tag": "h3",
-                            "text": "Change2",
-                            "link": "https://www.github.com/czarpino/change2"
-                        }
-                    ],
-
-                    "description": "A jquery plugin for detecting a series of related of input events without relying on a blur event.\n> <small>This plugin has been developed to allow binding of actions that have to be executed right after content changes in text inputs or text areas. Named after jQuery's change(), change2() eliminates the need to rely on a blur event for the change event to fire.</small>"
-                }
-            ]
-        },
-
-        {
-            "title": "Talks and Panels",
+            "title": "Talks, Panels, and Events",
 
             "icon": "fa-comments",
 
             "items": [
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "WebCamp Hackathon 2015"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "GAPLabs Webcamp 2015"
+                        },
+
+                        {
+                            "tag": "h5",
+                            "text": "Organizer"
+                        }
+                    ],
+
+                    "description": "Co-organized the WC 2015 hackathon."
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Introduction to Git Version Control"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "GAPLabs Webcamp 2015"
+                        },
+
+                        {
+                            "tag": "h5",
+                            "text": "Speaker"
+                        }
+                    ],
+
+                    "description": "Talked about the benefits of using Git and gently getting started. Slides are available at [SpeakerDeck](https://speakerdeck.com/czarpino/introduction-to-git-version-control)."
+                },
 
                 {
                     "headers": [
@@ -117,9 +105,11 @@
 
                         {
                             "tag": "h5",
-                            "text": "Speaker"
+                            "text": "Organizer"
                         }
-                    ]
+                    ],
+
+                    "description": "Organized workshop on industry web development covering server setup, database abstraction, HTTP, and data validation."
                 },
 
                 {
@@ -322,7 +312,28 @@
                         }
                     ],
 
-                    "description": "At whim, I took the CSC Philippines career professional exam and luckily passed at 85.5% and even placed 4th in the region!"
+                    "description": "In 2009, I whimsically took the CSC Philippines career professional exam and ridiculously passed at 85.5%."
+                }
+            ]
+        },
+
+        {
+            "title": "That's All",
+
+            "icon": "fa-exclamation ",
+
+            "items": [
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Get in Touch"
+                        }
+                    ],
+
+                    "description": "I'm on Twitter, Github, and StackOverflow. Or, you can drop me a line: `email at czarpino dot com`. Programming-related stuff only, please -- or, spam you go."
                 }
             ]
         }
