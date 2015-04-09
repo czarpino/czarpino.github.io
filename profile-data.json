@@ -1,7 +1,7 @@
 {
     "name": "Czar Pino",
 
-    "blurb": "Computer Programmer. Full Stack.",
+    "blurb": "Computer programmer.",
 
     "image": "//s.gravatar.com/avatar/56cc0e86eeeea49cbcea6dd793f529b1?s=300",
 
@@ -333,7 +333,7 @@
                         }
                     ],
 
-                    "description": "I'm on Twitter, Github, and StackOverflow. Or, you can drop me a line: `email at czarpino dot com`."
+                    "description": "I'm on Twitter, Github, and StackOverflow. Or, you can drop me a line: `email at czarpino dot com`. Programming-related stuff only, please -- or, spam you go."
                 }
             ]
         }
