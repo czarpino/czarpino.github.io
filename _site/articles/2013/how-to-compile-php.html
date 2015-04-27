@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/png" href="../../favicon.png">
+        <title>How to compile PHP</title>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <section>
+            <header id="header">
+                <section id="headerContainer">
+                    <a href="/" id="homeLink">
+                        czarpino@github-pages
+                    </a>
+                    <span id="copyright">
+                        &copy;&nbsp;2013
+                    </span>
+                </section>
+            </header>
+            <section id="main">
+                <article class="mainArticle">
+                    <header class="articleHeader">
+                        <h1 class="articleTitle">
+                            How to compile PHP
+                        </h1>
+                    </header>
+                    <section class="articleBody">
+                        <p>
+                        ... for an Apache web server in OSX.
+                        </p>
+                        <p>
+                        Before proceeding, be sure to have an installation of an Apache web server first. Better yet, <a href="how-to-compile-apache.html">compile your own Apache web server</a>.
+                        </p>
+                        <h2>Organize</h2>
+                        <p>
+                        Firstly, prepare a build directory to house the PHP source codes and an installation directory where compiled PHP files will be installed.
+                        </p>
+                        <pre><code>mkdir -p ~/build/php5.5    # for sources
+mkdir -p ~/tools/php5.5    # for compiled files</code></pre>
+                        <h2>Get the source</h2>
+                        <p>
+                        Next, download the PHP source files. At the time of writing it is available from <a href="http://php.net/downloads.php">http://php.net/downloads.php</a>. Pick the gzipped (.gz) version.
+                        </p>
+                        <p>Now, assuming the downloaded file went to <code>~/Downloads</code>, extract the files and move them to the build directory.
+                        </p>
+                        <pre><code>cd ~/Downloads
+tar -xzvf php-5.5.0.tar.gz
+mv php-5.5.0 ~/build/php5.5
+cd ~/build/php5.5</code></pre>
+                        <h2>Configure</h2>
+                        <p>
+                        From the build directory, the next step is now to configure compilation and installation settings.
+                        </p>
+                        <pre><code>./configure --prefix=$HOME/tools/php/php-5.5 \ 
+--with-apxs2=$HOME/tools/apache/apache-2.4/bin/apxs \
+--enable-cli --enable-intl --with-mcrypt --with-pdo-mysql \
+--with-mysql --with-curl --with-curl --with-gd --with-jpeg-dir \
+--enable-bcmath --enable-calendar --with-openssl --with-xsl</code></pre>
+                        <p>
+                        The code above is just my own set of irresponsible configurations. I only use this for development; not production.
+                        </p>
+                        <h2>Building</h2>
+                        <p>After configuring, the sources can now be compiled. Run <code>make</code> to compile PHP and generate the files to be installed.</p>
+                        <pre><code>make clean    # remove files from previous make
+make          # compile
+make test     # test for bugs</code></pre>
+                        <p>
+                        The last two steps (<code>make</code> and <code>make test</code>) usually take a long time...
+                        </p>
+                        <h2>Installation</h2>
+                        <p>Finally, PHP has been configured and built. All that's left is to install.</p>
+                        <pre><code>make install</code></pre>
+                    </section>
+                    <footer class="articleFooter">
+                        Published <time datetime="2013-09-23">September 2013</time>
+                    </footer>
+                </article>
+            </section>
+            <aside class="aside">
+                <section class="mainAside">
+                </section>
+            </aside>
+        </section>
+    </body>
+</html>

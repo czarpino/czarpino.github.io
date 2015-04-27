@@ -1,0 +1,342 @@
+{
+    "name": "Czar Pino",
+
+    "blurb": "Computer programmer.",
+
+    "image": "//s.gravatar.com/avatar/56cc0e86eeeea49cbcea6dd793f529b1?s=300",
+
+    "links": [
+
+        {
+            "icon": "fa-stack-overflow",
+            "url": "https://stackoverflow.com/users/1349295/czar-pino"
+        },
+
+        {
+            "icon": "fa-twitter",
+            "url": "https://twitter.com/czarpino"
+        },
+
+        {
+            "icon": "fa-github",
+            "url": "https://github.com/czarpino"
+        }
+    ],
+
+    "tags": [
+
+        {
+            "label": "Likes",
+            "keywords": ["Sf2", "Composer", "Bower", "Angular", "Git", "Bootstrap"]
+        }
+    ],
+
+    "sidenotes": [
+        "You can find [me on twitter](https://twitter.com/czarpino) occassionally raving about programming.",
+        "I also write at [blog.czarpino.com](https://blog.czarpino.com/)."
+    ],
+
+    "statement": "Hi, I'm Czar (pronounced 'zar'). I'm a computer programmer and I write mumbo-jumbo-looking broken english phrases that supposedly tells a computer what to do. I specialize in developing web based softwares i.e. websites.",
+
+    "sections": [
+
+        {
+            "title": "Talks, Panels, and Events",
+
+            "icon": "fa-comments",
+
+            "items": [
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "WebCamp Hackathon 2015"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "GAPLabs Webcamp 2015"
+                        },
+
+                        {
+                            "tag": "h5",
+                            "text": "Organizer"
+                        }
+                    ],
+
+                    "description": "Co-organized the WC 2015 hackathon."
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Introduction to Git Version Control"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "GAPLabs Webcamp 2015"
+                        },
+
+                        {
+                            "tag": "h5",
+                            "text": "Speaker"
+                        }
+                    ],
+
+                    "description": "Talked about the benefits of using Git and gently getting started. Slides are available at [SpeakerDeck](https://speakerdeck.com/czarpino/introduction-to-git-version-control)."
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "PHP Web Development"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "GAPLabs Webcamp 2013"
+                        },
+
+                        {
+                            "tag": "h5",
+                            "text": "Organizer"
+                        }
+                    ],
+
+                    "description": "Organized workshop on industry web development covering server setup, database abstraction, HTTP, and data validation."
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "GAPLabs Programming Competition"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "GAPLabs Webcamp 2013"
+                        },
+
+                        {
+                            "tag": "h5",
+                            "text": "Panelist"
+                        }
+                    ]
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Web Programming Contest"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "Smite Robotics and Web Programming Festival 2012"
+                        },
+
+                        {
+                            "tag": "h5",
+                            "text": "Panelist"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "title": "Experience",
+
+            "icon": "fa-suitcase",
+
+            "items": [
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Senior Software Engineer"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "Salarium Ltd."
+                        }
+                    ],
+
+                    "description": "I worked at Salarium as a Senior Software Engineer where I led the adoption and implementation of modern technologies and standards. I have:\n- Devised and initiated the transition away from legacy framework and tools\n- Introduced industry best practices, tools, and techniques\n- Introduced and designed unit tests\n- Conceived, defined, and documented feature specifications\n- Engineered components for internal and public use\n- Refactored and rewrote legacy codes to improve maintainability and design"
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Senior E-Commerce Developer"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "EasyShop Online Inc."
+                        }
+                    ],
+
+                    "description": "I worked as a full-stack developer, interim systems engineer, and programming consultant for EasyShop, an online buy and sell platform for the Philippines. Among the many hats I wore, I have in particular:\n- Spearheaded the adoption of modern tools, standards, and practices\n- Introduced coding standards and best practices\n- Introduced well-structured development and deployment processes\n- Performed extensive code reviews\n- Devised strategy for seamless transition to modern framework and tools\n- Setup and managed company servers and development infrastructure\n- Setup automated backups and deploy scripts"
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Web Developer"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "FundMyTravel"
+                        }
+                    ],
+
+                    "description": "The latter half of my stay with GoAbroad was spent in the development of [FundMyTravel](https://www.fundmytravel.com/), a crowd funding platform for travellers. I have:\n- Developed reusable back and front end modules\n- Designed unit tests\n- Spearheaded the adoption of a well-structured development and deployment process\n- Integrated issue tracking to the development process"
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Web Developer"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "GoAbroad Philippines Inc."
+                        }
+                    ],
+
+                    "description": "I worked at GoAbroad Philippines as a web developer where I inherited a handful of legacy projects. Mainly in charge of maintenance, I have:\n- Diagnosed and addressed bugs\n- Put forward the adoption of coding standards\n- Refactored and rewrote codes to improve maintainability and design\n- Developed new features to address arising business needs"
+                }
+            ]
+        },
+
+        {
+            "title": "Education",
+
+            "icon": "fa-graduation-cap",
+
+            "items": [
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Computer Science, B.S."
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "University of the Philippines"
+                        }
+                    ],
+
+                    "description": "I took up Computer Science in UP Tacloban. Wrote a variety of programs including:\n- Games,\n- Networking applications, \n- Algorithm and data structure simulators,\n- Information systems,\n- and AIs."
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "High School"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "Philippine Science High School"
+                        }
+                    ],
+
+                    "description": "I was granted full scholarship in Philippine Science High School where I was introduced to  C and Visual Basic programming."
+                },
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Elementary School"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "STEFTI"
+                        }
+                    ],
+
+                    "description": "I graduated in the pioneering batch of STEFTI. I was a 1st class boy scout, a band lyrist, and a clubless student."
+                }
+            ]
+        },
+
+        {
+            "title": "Certification",
+
+            "icon": "fa-certificate",
+
+            "items": [
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Civil Service Professional"
+                        },
+
+                        {
+                            "tag": "h4",
+                            "text": "Civil Service Commission of the Philippines"
+                        }
+                    ],
+
+                    "description": "In 2009, I whimsically took the CSC Philippines career professional exam and ridiculously passed at 85.5%."
+                }
+            ]
+        },
+
+        {
+            "title": "That's All",
+
+            "icon": "fa-exclamation ",
+
+            "items": [
+
+                {
+                    "headers": [
+
+                        {
+                            "tag": "h3",
+                            "text": "Get in Touch"
+                        }
+                    ],
+
+                    "description": "I'm on Twitter, Github, and StackOverflow. Or, you can drop me a line: `email at czarpino dot com`. Programming-related stuff only, please -- or, spam you go."
+                }
+            ]
+        }
+    ]
+}
