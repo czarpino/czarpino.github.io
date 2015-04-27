@@ -3,7 +3,7 @@ layout: cayman.post
 title:  "Show Current Git Branch"
 subtitle: "Automatically display the current Git branch when entering a Git repo"
 date:   2015-04-27 16:44:14
-categories: jekyll update
+categories:
 ---
 
 A few months ago, I learned a handy little trick to automatically show the current git branch in the command-line. Open your terminal and add the following to your `.bash_profile`.
