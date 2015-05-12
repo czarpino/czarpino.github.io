@@ -3,10 +3,13 @@ title: Czar Pino
 email: your-email@domain.com
 description: Computer Programmer
 baseurl: ""
-permalink: "/posts/:categories/:title"
+permalink: "/posts/:title"
 url: "https://czarpino.com" # the base hostname & protocol for your site
 twitter_username: czarpino
 github_username:  czarpino
+linkedin_url: https://ph.linkedin.com/in/czarpino
+github_url: https://github.com/czarpino
+twitter_url: https://twitter.com/czarpino
 
 # Build settings
 markdown: kramdown
