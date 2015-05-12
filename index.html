@@ -13,6 +13,9 @@ layout: simple
 		    <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
 		</article>
 	{% endfor %}
+{% else %}
+	<p>I got nothin' yet. Check back later.</p>
+	<img src="/images/cebu.jpg">
 {% endif %}
 
 
