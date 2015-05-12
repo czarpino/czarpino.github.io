@@ -1,27 +1,21 @@
 ---
-layout: cayman.home
+layout: simple
 ---
 
-
-<h1>About</h1>
-
-Hi, I'm Czar (pronounced 'zar'). I'm a computer programmer based in Tacloban, Philippines. I'm experienced in developing web based software using Symfony, Composer, Bower, Angular, and Git. Get in touch with me at 'email at czarpino dot com'.
-
-
-
-
 {% if 0 < site.posts.size %}
-<h1>Posts</h1>
-<ul>
-  {% for post in site.posts %}
-    <li style="list-style: none;">
-      {{ post.date | date: "%b %-d, %Y" }} - 
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+	{% for post in site.posts %}
+		<article class="article-preview">
+		    <header>
+		        <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+		        <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+		    </header>
+		    <p>{{ post.content | truncatewords:128}}</p>
+		    <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+		</article>
+	{% endfor %}
 {% endif %}
 
 
-<p style="margin-top: 3em;">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<p style="margin-top: 3em;">
+	Oh hey, you can subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>. : )
+</p>

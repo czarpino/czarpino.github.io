@@ -1,0 +1,82 @@
+body {
+    font-family: "Helvetica", "sans-serif";
+    font-size: 16px;
+    background-color: rgb(250,250,250);
+    color: rgb(50,50,50);
+}
+
+a {
+    color: rgb(75,75,250);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 > a,
+h2 > a,
+h3 > a{
+    color: rgb(50,50,50);
+}
+
+img {
+    max-width: 512px;
+    height: auto;
+}
+
+code {
+    font-family: "Monaco";
+    font-size: 16px;
+    color: rgb(64,64,64);
+    background: rgb(244,244,244);
+    padding: 2px 4px;
+    border: solid 1px rgb(200,200,200);
+}
+
+pre {
+    background: rgb(244,244,244);
+    padding: 8px 8px;
+    border: solid 1px rgb(200,200,200);
+    line-height: 24px;
+}
+pre > code {
+    font-size: 13px;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.page-header, .page-footer {
+    padding: 32px 16px;
+}
+
+.header-nav ul, .footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.header-nav ul li, .footer-nav ul li {
+    display: inline;
+    margin: 8px;
+}
+
+.page-content {
+    padding: 32px 16px;
+}
+
+.article-preview, .article-full-length {
+    padding: 16px 0;
+    max-width: 512px;
+}
+.article-preview header h1, .article-full-length header h1 {
+    margin: 0;
+}
+.article-preview p, .article-full-length p {
+    line-height: 24px;
+    
+}
+
+.article-date {
+    font-size: small;
+}
