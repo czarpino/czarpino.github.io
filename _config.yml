@@ -1,6 +1,6 @@
 # Site settings
 title: Czar Pino
-email: your-email@domain.com
+email: email@czarpino.com
 description: Computer Programmer
 baseurl: ""
 permalink: "/posts/:title"
