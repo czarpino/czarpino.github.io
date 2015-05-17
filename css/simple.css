@@ -47,6 +47,19 @@ pre > code {
     padding: 0;
 }
 
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+blockquote {
+    color: rgb(125,125,125);
+    margin: 0;
+    border-left: double rgb(240,240,240);
+    padding-left: 32px;
+}
+
 .page-header, .page-footer {
     padding: 32px 16px;
 }
@@ -69,9 +82,6 @@ pre > code {
     padding: 16px 0;
     max-width: 512px;
 }
-.article-preview header h1, .article-full-length header h1 {
-    margin: 0;
-}
 .article-preview p, .article-full-length p {
     line-height: 24px;
     
@@ -79,10 +89,6 @@ pre > code {
 
 .article-date {
     font-size: small;
-}
-
-header h1 {
-    font-size: 2.5em;
 }
 
 .article-full-length header, .article-preview header {
