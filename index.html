@@ -10,7 +10,7 @@ layout: simple
 		        <small>{{ post.date | date: "%b %-d, %Y" }}</small>
 		    </header>
 		    <p>{{ post.content | truncatewords:128}}</p>
-		    <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+		    <a href="{{ post.url | prepend: site.baseurl }}">Read full post &raquo;</a>
 		</article>
 	{% endfor %}
 {% else %}

@@ -78,6 +78,10 @@ blockquote {
     padding: 32px 16px;
 }
 
+.article-preview {
+    margin-bottom: 32px;
+}
+
 .article-preview, .article-full-length {
     padding: 16px 0;
     max-width: 512px;
@@ -92,5 +96,5 @@ blockquote {
 }
 
 .article-full-length header, .article-preview header {
-    margin-bottom: 4em;
+    margin-bottom: 32px;
 }
