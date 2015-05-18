@@ -1,11 +1,6 @@
 ---
 layout: simple
 ---
-{% if page.previous %}
-	<small>
-		Read previous <a href="{{ page.previous.url | prepend: site.baseurl }}">"{{ page.previous.title }}"</a>
-	</small>
-{% endif %}
 <article class="article-full-length">
     <header>
     	{% if page.cover %}
@@ -15,9 +10,17 @@ layout: simple
         <span class="article-date">{{ page.date | date: "%b %-d, %Y" }}</span>
     </header>
     {{ content }}
-    {% if page.next %}
-    	<small>
-    		Read next <a href="{{ page.next.url | prepend: site.baseurl }}">"{{ page.next.title }}"</a>
-    	</small>
-    {% endif %}
+    <p>
+        {% if page.previous %}
+        <small>
+            &laquo; <a href="{{ page.previous.url | prepend: site.baseurl }}">"{{ page.previous.title|truncatewords:7 }}"</a>
+        </small>
+        {% endif %}
+
+        {% if page.next %}
+    	<small style="float:right">
+    		<a href="{{ page.next.url | prepend: site.baseurl }}">"{{ page.next.title|truncatewords:7 }}"</a> &raquo;
+	    </small>
+        {% endif %}
+    <p>
 </article>
