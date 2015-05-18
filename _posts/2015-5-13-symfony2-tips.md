@@ -39,7 +39,7 @@ This is a no-brainer but surprisingly many developers are not doing this. Apart 
 
 ## One controller class per page
 
-This one is somewhat personal preference. I don't beleive there is a wrong way to do this but putting a little thought into how to organize controllers shouldn't hurt. Besides, it's not rare to get asked: "So, how do you organize controllers?".
+This one is somewhat personal preference. I don't believe there is a wrong way to do this but putting a little thought into how to organize controllers shouldn't hurt. Besides, it's not rare to get asked: "So, how do you organize controllers?".
 
 Controller classes are simply a way to group related controllers. I group controllers by page. in doing so, controller class names become more meaningful and are easier to identify at a glance. 
 
