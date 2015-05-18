@@ -32,6 +32,7 @@ code {
     background: rgb(244,244,244);
     padding: 2px 4px;
     border: solid 1px rgb(200,200,200);
+    line-height: 32px;
 }
 
 pre {
@@ -45,6 +46,7 @@ pre > code {
     border: none;
     background: none;
     padding: 0;
+    line-height: 24px;
 }
 
 header h1 {
@@ -58,6 +60,10 @@ blockquote {
     margin: 0;
     border-left: double rgb(240,240,240);
     padding-left: 32px;
+}
+
+p, li {
+    line-height: 24px;
 }
 
 .page-header, .page-footer {
@@ -85,10 +91,6 @@ blockquote {
 .article-preview, .article-full-length {
     padding: 16px 0;
     max-width: 512px;
-}
-.article-preview p, .article-full-length p {
-    line-height: 24px;
-    
 }
 
 .article-date {
