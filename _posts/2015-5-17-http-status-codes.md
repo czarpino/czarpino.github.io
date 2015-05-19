@@ -3,13 +3,11 @@ layout: simple.post
 title: What every developer should know about HTTP Status Codes
 ---
 
-> **Interviewer**: Tell me about the different HTTP status codes
+> **Interviewer**: Tell me about HTTP status codes
 > 
-> **Interviewee**: ... Hypertext Transfer Protocol ... 404 Not found, 200 OK, 301 Redirect ...
+> **Interviewee**: ... Hypertext Transfer Protocol ... 404, 200, 301 ...
 
-There are over a dozen HTTP status codes define in the spec but you only need to know a handful to get your web-development-fu to the next level.
-
-All HTTP status codes are categorised into 5 classes:
+There are over a dozen HTTP status codes defined in the spec but you only need to know a handful to get your web-development-fu to the next level. Interestingly, status codes are categorised into just 5 classes:
 
 1. 1xx - Informational
 2. 2xx - Successful
@@ -19,7 +17,7 @@ All HTTP status codes are categorised into 5 classes:
 
 ## Informational 1xx
 
-Not the actual response, rather some intermediate meta-info relevant to the actual response. Informational responses are provisional and serves only to relay possibly useful information in handling the regular response. Examples:
+An intermediate response containing meta-info relevant to the actual response. Informational responses are provisional and serves only to relay possibly useful information in handling the actual response. Examples:
 
 1. `100 Continue`
 2. `101 Switching Protocols`
@@ -28,7 +26,7 @@ I have not seen these in practice and I think developers rarely ever need to han
 
 ## Successful 2xx
 
-This is the response you want for at least 99% of all your requests. Successful responses indicate that the request has been successfully processed by the server. Examples:
+This is the response you want for at least 99% of requests. A successful response indicates that the request has been successfully processed by the server. Examples:
 
 1. `200 OK`
 2. `201 Created`
