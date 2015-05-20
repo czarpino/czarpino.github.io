@@ -22,8 +22,6 @@ An intermediate response containing meta-info relevant to the actual response. I
 1. `100 Continue`
 2. `101 Switching Protocols`
 
-I have not seen these in practice and I think developers rarely ever need to handle this sort of response.
-
 ## Successful 2xx
 
 This is the response you want for at least 99% of requests. A successful response indicates that the request has been successfully processed by the server. Examples:
