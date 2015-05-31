@@ -1,6 +1,7 @@
 ---
 layout: simple.post
 title: What every developer should know about HTTP Status Codes
+categories: programming
 ---
 
 > **Interviewer**: Tell me about HTTP status codes

@@ -1,26 +1,26 @@
 ---
 layout: simple
 ---
-<article class="article-full-length">
-    <header>
-    	{% if page.cover %}
-        	<img src="{{ page.cover }}" alt="test">
-        {% endif %}
-        <h1 class="page-title">{{ page.title }}</h1>
-        <span class="article-date">{{ page.date | date: "%b %-d, %Y" }}</span>
-    </header>
-    {{ content }}
-    <p>
-        {% if page.previous %}
-        <small>
-            &laquo; <a href="{{ page.previous.url | prepend: site.baseurl }}">"{{ page.previous.title|truncatewords:7 }}"</a>
-        </small>
-        {% endif %}
 
-        {% if page.next %}
-    	<small style="float:right">
-    		<a href="{{ page.next.url | prepend: site.baseurl }}">"{{ page.next.title|truncatewords:7 }}"</a> &raquo;
-	    </small>
-        {% endif %}
-    <p>
+<article class="site-article">
+    <header class="site-article-header">
+        <h1>{{ page.title }}</h1>
+        <span class="site-article-date">On {{ page.date | date: "%b %-d, %Y" }}</span>
+    </header>
+    <section class="site-article-content">
+        {{ content }}
+    </section>
 </article>
+<aside class="page-aside">
+    <h2>More stories</h2>
+    {% if page.next %}
+        <a href="{{ page.next.url | prepend: site.baseurl }}">
+            &raquo; {{ page.next.title|truncatewords:12 }}
+        </a>
+    {% endif %}
+    {% if page.previous %}
+        <a href="{{ page.previous.url | prepend: site.baseurl }}">
+            &laquo; {{ page.previous.title|truncatewords:12 }}
+        </a>
+    {% endif %}
+</aside>

@@ -1,0 +1,14 @@
+---
+layout: simple
+---
+
+<aside class="page-aside">
+    <h1>Programmings</h1>
+    <ol>
+        {% for post in site.posts %}
+            {% if 'programming' == post.categories[0] %}
+                <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            {% endif %}
+	{% endfor %}
+    </ol>
+</aside>

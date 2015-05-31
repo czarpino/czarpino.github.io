@@ -1,6 +1,7 @@
 ---
 layout: simple.post
 title: Symfony Tips
+categories: programming
 ---
 
 One of the things that make Symfony a great framework is it's very high flexibility. It rarely  limits the developer to just one way of doing things but instead often provide several alternatives to choose from. Ironically, this is also one of it's pain points because it requires a lot of upfront decision making to be made: where to put services, how to group classes, what configuration format to use, which ORM to use, etc.. Basically, the responsible developer will be faced with the reccurringly imposing question: "which way should I choose and why?".
