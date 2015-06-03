@@ -10,7 +10,7 @@ There is much to be said about the flaws of PHP as well as it's growth and there
 
 # Use a framework
 
-Arguably, the single best way to get better in PHP is to adopt a good framework. And I, personally, could not recommend [Symfony](http://symfony.com) enough. Symfony is one of the oldest and most popular PHP frameworks. It's components are even used by other frameworks such as Laravel and Drupal. Despite the popular belief that Symfony is not opinionated,  it is actually quite so on areas that really matter when building good software. It has a rigour which makes bad coding practices difficult, if not awkward, to do.
+Arguably, the single best way to get better in PHP is to adopt a good framework. And I, personally, could not recommend [Symfony](http://symfony.com) enough. Symfony is one of the oldest and most popular PHP frameworks. It's components are used by several high-profile project such as Laravel, Composer, Joomla, and Drupal. Despite the popular belief that Symfony is not opinionated,  it is actually quite so on areas that really matter when building good software. It has a rigour which makes bad coding practices difficult, if not awkward, to do.
 
 # Adopt a coding standards
 
