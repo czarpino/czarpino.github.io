@@ -16,7 +16,7 @@ categories: programming
     - [Maintenance](#maintenance)
 4. [Sync merge](#)
 5. [Merge request](#merge-request)
-6. [Naming standards](#naming-standards)
+6. [Naming conventions](#naming-conventions)
 7. [Conclusion](#conclusion)
 
 # Overview
@@ -92,12 +92,14 @@ A sync merge is usually performed right before submitting a merge request. Best 
 
 To manage released issues and keep the dev branch relatively stable, direct merges are discouraged in favor of merge requests. A merge request is exactly what it's name says, a request for merge. This allows the team to review the changes and hand pick issues to be included in the next release.
 
-# Branch naming
+# Naming conventions
 
-Branch naming conventions use the following legend:
+Naming conventions use the following legend:
 
 - `name`: the literal 'name'
 - `[name]`: 'name' will be replaced by another value
+
+## Branch naming
 
 The branch naming conventions are as follows:
 
@@ -105,6 +107,14 @@ The branch naming conventions are as follows:
 2. Dev - `dev`
 3. Release - `rb-[major-version].[minor-version]` e.g. `rb-1.0`, `rb-1.1`, etc.
 4. Issue - `issue-[issue-number]` e.g. `issue-1`, `issue-2`, etc. where the issue number is the issue id as provided by the issue tracker
+
+## Tag naming
+
+Everytime a merge is made to master, a *release tag* is created. And, this tag is used to deploy the software. Release tag naming uses the following convention:
+
+    rel-[major-version].[minor-version].[patch-number]
+
+Examples: `rel-1.0.0`, `rel-1.0.1`
 
 # Conclusion
 
