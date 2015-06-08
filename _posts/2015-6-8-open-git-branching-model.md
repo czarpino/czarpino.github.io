@@ -25,7 +25,7 @@ A branching model inspired by Gitflow and Pristine Trunk (of Subversion).
 
 # Branches
 
-Git's **cheap-local-branching** model has allowed for a diverse number of possible branching models. There are 4 distinct types of branches in this model, each with a different purpose and life-cycle.
+Git's *cheap-local-branching* has allowed for a diverse number of possible branching models. There are 4 distinct types of branches in this model, each with a different purpose and life-cycle.
 
 ## Issue branch
 
@@ -35,9 +35,9 @@ An issue branch starts by branching off dev, master, release, or another issue b
 
 ## Release branch
 
-A release branch is another short-lived branch created to initiate the release cycle. It contains the latest **production-ready** version of the software and is used to parallelize deployment and the next stage of development e.g. deploying v1.0 while proceeding to work on v2.0.
+A release branch is another short-lived branch created to initiate the release cycle. It contains the latest production-ready version of the software and is used to parallelize deployment and the next stage of development i.e. deploying v1.0 while proceeding to work on v2.0.
 
-A release branch starts by branching off dev branch. Release specific commits (e.g. configuration or bug fixes) may be made before it is finally merged to master branch. Bug fixes and general maintenance also happens on the release branch. It is discarded when the next release branch gets merge to master.
+A release branch starts by branching off dev branch. Release specific commits (e.g. configuration or bug fixes) may be made before it is finally merged to master branch. Bug fixes and general maintenance also happens on the release branch. It is discarded when the next release branch gets merged to master.
 
 ## Dev
 
@@ -47,11 +47,11 @@ The dev branch branches off master branch at the start of the project and goes o
 
 ## Master
 
-Master is the longest-lived branch and contains the latest publicly released version of the software. Only release branches and urgent issue branches are ever merged into master branch. And, all merges are tagged.
+Master is the longest-lived branch and contains the latest publicly released version of the software. Only release branches and urgent issue branches are ever merged into master branch. Every merge to master branch is tagged.
 
 # Branching strategy
 
-There are typically just 2 different types of branching strategy; one for development and another for deployment. These are general descriptions of the process; actual commands are ommitted.
+There are typically just 2 different types of branching strategy; one for development and another for deployment. It is easier to understand, however, when put into a familiar and practical development context i.e. development, release, and maintenance. These are general descriptions of the process; actual commands are ommitted.
 
 ## Development
 
@@ -97,6 +97,8 @@ A sync merge is usually performed right before submitting a merge request. Best 
 # Merge request
 
 To manage released issues and keep the dev branch relatively stable, direct merges are discouraged in favor of merge requests. A merge request is exactly what it's name says, a request for merge. This allows the team to review the changes and hand pick issues to be included in the next release.
+
+![a visual explanation of sync merge]()
 
 # Branch naming
 
