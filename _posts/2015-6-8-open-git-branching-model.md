@@ -61,8 +61,6 @@ The bulk of development is usually adding or enhancing features and comes in the
 2. Relevant commits are made to resolve the issue
 3. The issue branch is merged into dev
 
-![image here]()
-
 ## Release
 
 When the software has reached a stable state and is ready for release, the release cycle begins and proceeds with the following strategy:
@@ -71,8 +69,6 @@ When the software has reached a stable state and is ready for release, the relea
 2. The release branch is merged into master
 3. A release tag is created from master
 4. The release tag is deployed
-
-![image here]()
 
 ## Maintenance
 
@@ -86,8 +82,6 @@ As no software is perfect, maintenance issues or *bugs* will eventually come up.
 6. A release tag is created from master
 7. The release tag is deployed
 
-![image here]()
-
 # Sync merge
 
 Sync merge is an abbreviation of *synchronization merge*. A sync merge brings a child branch back up-to-date with it's parent. This reduces the difference between the parent and child branch to only the changes made in the latter. This, consequently, ensures changes in the child branch are all that is merged back into the parent.
@@ -97,8 +91,6 @@ A sync merge is usually performed right before submitting a merge request. Best 
 # Merge request
 
 To manage released issues and keep the dev branch relatively stable, direct merges are discouraged in favor of merge requests. A merge request is exactly what it's name says, a request for merge. This allows the team to review the changes and hand pick issues to be included in the next release.
-
-![a visual explanation of sync merge]()
 
 # Branch naming
 
