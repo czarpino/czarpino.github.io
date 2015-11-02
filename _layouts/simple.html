@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/css/simple.css">
         <link rel="stylesheet" href="/css/highlight.default.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <script>
@@ -19,11 +20,7 @@
           ga('create', 'UA-42612487-1', 'auto');
           ga('send', 'pageview');
         </script>
-        {% include simple.header.html %}
-        <section>
-            {{ content }}
-        </section>
-        {% include simple.footer.html %}
+        {{ content }}
         <script src="/js/highlight.js"></script>
         <script src="/js/img-expand.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>

@@ -5,6 +5,10 @@ body {
     color: #3f3f3f;
 }
 
+h1, h2, h3, h4 {
+    font-family: "Roboto Slab";
+}
+
 a {
     color: #f26148;
 }
@@ -17,8 +21,15 @@ a {
 }
 
 .site-footer {
+    margin-top: 3em;
     padding: 32px;
     text-align: center;
+    font-size: 13px;
+}
+
+.site-footer li {
+    list-style: none;
+    margin: 1.25em 0;
 }
 
 .site-header nav ul, .site-footer nav ul {
@@ -30,7 +41,6 @@ a {
     list-style: none;
     display: inline;
     margin: 0 8px 0 8px;
-    font-size: 14px;
 }
 
 .site-header nav li:first-of-type, .site-footer nav li:first-of-type {
@@ -130,8 +140,7 @@ a {
 }
 /* END Site article */
 
-/* Page footer */
-
+/* Aside elements */
 .page-aside {
     border-top: solid 1px #efefef;
     border-bottom: solid 1px #efefef;
@@ -169,4 +178,31 @@ a {
     content: "PREV: ";
 }
 
-/* END Page footer */
+/* END Aside elements */
+
+/* Home */
+
+.article-index {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.article-index h1 {
+    font-size: 42px;
+    font-family: "Roboto Slab", "Georgia", serif;
+    margin-bottom: 2em;
+}
+
+.article-index ul {
+    padding: 0;
+    margin: 2em 0;
+}
+
+.article-index li {
+    margin: 1em 0;
+    list-style: none;
+    list-style-position: outside;
+}
