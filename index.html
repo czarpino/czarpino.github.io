@@ -4,14 +4,14 @@ layout: simple
 
 <article class="site-article">
     <section class="site-article-content">
-        <p>Hi, I'm Czar and welcome to my site. I've been building software for the web since 2011 with experience working on early and mid-stage startups. I'm interested in various aspects of web development including operations, infrastructure, software design, user experience, performance, and security. I'm currently in Tacloban Philippines starting up <a href="https://www.thankyouspot.com">ThankYouSpot</a>, a platform for sharing gratitude stories.</p>
+        <p>Hi, I'm Czar and welcome to my site. I've been building software for the web since 2011 with experience working on early and mid-stage startups. I dabble in various aspects of web development including operations, infrastructure, software design, user experience, performance, and security.</p>
     </section>
 </article>
 <aside class="page-aside">
     <h1>Posts</h1>
     <ol>
         {% for post in site.posts %}
-            <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <li><strong><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
 	{% endfor %}
     </ol>
 </aside>

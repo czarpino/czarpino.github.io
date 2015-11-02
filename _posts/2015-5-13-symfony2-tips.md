@@ -8,7 +8,7 @@ One of the things that make Symfony a great framework is it's very high flexibil
 
 Recently, a collegue asked me about organizing a Symfony project. That makes the fourth time I've been asked in the past year. By no means am I an expert but to anyone else who'd ask, here are my pseudo-randomly collected suggestions.
 
-## Read the official best practice book
+# Read the official best practice book
 
 Interestingly, the Symfony team has put forward an official set of best practices which includes an opinionated project structure. The book addresses many of the common issues that tear at developers as they bootstrap their Symfony project. While I do not agree with everything, it provides a solid baseline for organizing a Symfony project. Check out the [Symfony Official Best Practice book](http://symfony.com/doc/current/best_practices/index.html).
 
@@ -24,7 +24,7 @@ Prefer annotations over YAML, XML, or PHP. Annotated configurations are more sem
 
 > Overall, this means you should aggressively decouple your business logic from the framework while, at the same time, aggressively coupling your controllers and routing to the framework in order to get the most out of it.
 
-I think this section in the Best Practice book deserves a special mention 
+I think this section in the Best Practice book deserves a special mention
 
 While high cohesion and low coupling is generally desirable and are considered hallmarks of well-written software, it's price is productivity and time-to-market (or at least the time it takes to get software live online).
 
@@ -42,7 +42,7 @@ This is a no-brainer but surprisingly many developers are not doing this. Apart 
 
 This one is somewhat personal preference. I don't believe there is a wrong way to do this but putting a little thought into how to organize controllers shouldn't hurt. Besides, it's not rare to get asked: "So, how do you organize controllers?".
 
-Controller classes are simply a way to group related controllers. I group controllers by page. in doing so, controller class names become more meaningful and are easier to identify at a glance. 
+Controller classes are simply a way to group related controllers. I group controllers by page. in doing so, controller class names become more meaningful and are easier to identify at a glance.
 
 Occasionally, there will also be controllers invoked from multiple pages -- usually via ajax calls. I group these controllers into classes by feature and collect these feature-controller-classes under an Api directory.
 
