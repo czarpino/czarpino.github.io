@@ -16,7 +16,7 @@ This way, authentication goes to a layer of its own where other components in th
 
 # Securing an access token
 
-First and foremost, the auth system should provide a facility to *securely* acquire an access token. If it needs pointing out, requesting an access token from the API should only be done on the server-side to keep the client secret from leaking. To do this, I made an Express middleware which handled requests for an access token by performing the actual request to the API itself.
+First and foremost, the auth system should provide a facility to *securely* acquire an access token. If it needs pointing out, requesting an access token from the API should only be done on the server-side to keep the client secret from leaking. To do this, I made an Express middleware which handled requests for an access token by performing the actual request to the API itself. This way, only this endpoint will ever be directly interacting with the API for securing access tokens.
 
     // server/middleware/apiConnector.js
     module.exports = (function () {
@@ -65,7 +65,7 @@ First and foremost, the auth system should provide a facility to *securely* acqu
     	return function apiConnector() { return router; };
     }());
 
-For consistency, I group these endpoints under `/api`. Meaning, I mount the middleware on this path. The full path to the endpoint, then, became `www.example.com/api/access-token`.
+For consistency, I grouped these endpoints under `/api`. Meaning, I mounted the middleware on this path. The full path to the endpoint, then, became `www.example.com/api/access-token`.
 
     // index.js
 
