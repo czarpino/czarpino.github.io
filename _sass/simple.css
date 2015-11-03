@@ -114,7 +114,7 @@ a {
     font-size: 13px;
     font-style: normal;
     color: rgb(64,64,64);
-    background: rgb(253,246,227);
+    background: #EFEFEF;
     padding: 2px 4px;
     border: solid 1px rgb(235,235,235);
     line-height: 24px;
@@ -128,7 +128,7 @@ a {
     line-height: 24px;
 }
 .site-article-content pre > code {
-    font-size: 13px;
+    font-size: 12px;
     border: none;
     background: none;
     padding: 0;
