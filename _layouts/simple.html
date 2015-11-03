@@ -5,13 +5,13 @@
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="/favicon.png">
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/simple.css">
-        <link rel="stylesheet" href="/css/highlight.default.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/styles.css?bust={{ site.time | date: '%s' }}">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Roboto+Slab:700?bust={{ site.time | date: '%s' }}' rel='stylesheet' type='text/css'>
     </head>
     <body>
+        {{ content }}
+        <script src="/js/merged.js?bust={{ site.time | date: '%s' }}"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -20,9 +20,5 @@
           ga('create', 'UA-42612487-1', 'auto');
           ga('send', 'pageview');
         </script>
-        {{ content }}
-        <script src="/js/highlight.js"></script>
-        <script src="/js/img-expand.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>
