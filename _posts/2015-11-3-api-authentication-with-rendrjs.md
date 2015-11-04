@@ -259,7 +259,9 @@ Following Rendr's approach to override Backbone's `sync` method, I created an `a
                     .fail(function (jqXHR, textStatus, errorThrown) {
                         if (parseInt(jqXHR.status, 10) === 401) {
                             $.ajax({url: '/api/access-token', method: 'POST'})
-                                .done(reSync)
+                                .done(function saveToken(responseData) {
+                                    _this.app.get('session')['access_token'] = responseData['access_token']
+                                }).done(reSync)
                                 .fail(dfd.rejectWith);
 
                             return;
