@@ -208,6 +208,8 @@ At this point, the authentication system is complete for the server-side. The ap
 
 ## Client-side signing and request retry
 
+> **Update:** Turns out, it would be more efficient to use [Rendr's API proxy](http://rendrjs.github.io/app/#config) to centralize reauthentication logic in the ApiAdapter. This means, even the access token itself no longer needs to be exposed client side as all requests will be directed to the API proxy before being forwarded to the actual API server. This works because the API proxy forwards the request using the ApiAdapter which we already created!
+
 Being built on top of Backbone/jQuery for the client side, I had to override API syncing in Backbone's models and collections. Same as on the server-side of things, all API requests are signed with an access token. On failure, a new access token is requested then the failed request is retried.
 
 ### The API syncer
