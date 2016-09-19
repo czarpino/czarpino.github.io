@@ -1,14 +1,107 @@
 ---
-layout: simple
+layout: landing
 ---
+                <!-- Banner -->
+                    <section id="banner">
+                        <div class="inner">
+                            <h2>{{ site.title }}</h2>
+                            <p>{{ site.description | markdownify }}</p>
+                            <ul class="actions">
+                                <li><a href="mailto:inbox@czarpino.com" class="button special">Say Hi</a></li>
+                            </ul>
+                        </div>
+                        <a href="#one" class="more scrolly">About Me</a>
+                    </section>
 
-{% include simple.header.html %}
-<section class="article-index">
-    <h1>Ravings</h1>
-    <ul>
-        {% for post in site.posts %}
-            <li><strong><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
-        {% endfor %}
-    </ul>
-</section>
-{% include home.footer.html %}
+                <!-- One -->
+                    <section id="one" class="wrapper style1 special">
+                        <div class="inner">
+                            <header class="major">
+                                <h2>Hi, I'm Czar!<br />
+                                The Fili Programmer</h2>
+                                <p>I'm a filipino programmer with extensive experience in web development.<br />
+                                I like to work on fast paced, high-impact, startupy projects.</p>
+                            </header>
+                            <ul class="icons major">
+                                <li><span class="icon fa-code major style1"><span class="label">Lorem</span></span></li>
+                                <li><span class="icon fa-database major style2"><span class="label">Ipsum</span></span></li>
+                                <li><span class="icon fa-server major style3"><span class="label">Dolor</span></span></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                <!-- Two -->
+                    <section id="two" class="wrapper alt style2">
+                        <section class="spotlight">
+                            <div class="image"><img style="padding: 1%;
+    background-color: #2e3842; filter:brightness(80%);" src="images/pic01.png" alt="" /></div><div class="content">
+                                <h2>Online Shopping Store</h2>
+                                <p>Making shopping easy. <a href="https://www.easyshop.ph" target="_blank">EasyShop.PH</a> is an online shopping website primarily targeted towards the Philippine market.</p>
+                            </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image"><img style="padding: 1%;
+    background-color: #2e3842; filter:brightness(80%)" src="images/pic02.png" alt="" /></div><div class="content">
+                                <h2>Exhange skills for homestay</h2>
+                                <p>Teach a language or skill and get free homestay anywhere in the world. <a href="https://www.gocambio.com">GoCambio</a> just might revolutionize travel.</p>
+                            </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image"><img style="padding: 1%;
+    background-color: #2e3842; filter:brightness(80%)" src="images/pic03.png" alt="" /></div><div class="content">
+                                <h2>Payroll Automation</h2>
+                                <p>Time, attendance, and payroll at the click of a button. <a href="https://www.salarium.com/">Salarium</a> takes the pain away from HR.</p>
+                            </div>
+                        </section>
+                    </section>
+
+                <!-- Three -->
+                    <section id="three" class="wrapper style3 special">
+                        <div class="inner">
+                            <header class="major">
+                                <h2>Technology Stack</h2>
+                                <p>I enjoy using all sorts of technologies for development<br />
+                                but my preferred tech stack would include:</p>
+                            </header>
+                            <ul class="features">
+                                <li class="icon fa-code">
+                                    <h3>Symfony</h3>
+                                    <p>Symfony makes PHP a great language for the web. It has a large community and has the highest quality codebase for a framework.</p>
+                                </li>
+                                <li class="icon fa-code">
+                                    <h3>Angular</h3>
+                                    <p>Angular makes it possible to markup HTML with behavior in a very semantic way. Currently looking forward to picking up v2.0.</p>
+                                </li>
+                                <li class="icon fa-ship">
+                                    <h3>Docker</h3>
+                                    <p>Docker provides a lightweight virtualisation platform for modeling distributed services. It also keeps my local machine clean.</p>
+                                </li>
+                                <li class="icon fa-code-fork">
+                                    <h3>Git</h3>
+                                    <p>Currently the industry's VCS of choice, Git is indispensable in team projects as well as highly structured development workflows.</p>
+                                </li>
+                                <li class="icon fa-server">
+                                    <h3>AWS</h3>
+                                    <p>AWS has a great ecosystem of cloud compute services and makes scaling incredibly cheap and efficient. No better place to host a server.</p>
+                                </li>
+                                <li class="icon fa-database">
+                                    <h3>MySQL</h3>
+                                    <p>The world's most popular database. And arguably, the most reliable too. Though I've been thinking about MariaDB as of late.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                <!-- CTA -->
+                    <section id="cta" class="wrapper style4">
+                        <div class="inner">
+                            <header>
+                                <h2>You like me?</h2>
+                                <p>That's cool. I like me too. I also like making positive social impact, talking, thinking, and programming.</p>
+                            </header>
+                            <ul class="actions vertical">
+                                <li><a href="#" class="button fit special">Say Hi</a></li>
+                                <li><a href="#" class="button fit">Look Again</a></li>
+                            </ul>
+                        </div>
+                    </section>
